@@ -1,2 +1,2 @@
-# PHX-app
-The repository consists of information and documentation focused to PHX application.
+# PHX_app
+This repository contains the source code for the R-Shiny "Population Health Explorer (PHX)" Application.
