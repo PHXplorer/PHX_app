@@ -1,0 +1,5 @@
+renv/library
+renv/staging
+.Renviron
+data.validator.Rproj
+.Rproj.user

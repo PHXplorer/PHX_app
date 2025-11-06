@@ -1,0 +1,8 @@
+proxy:
+  users:
+    - name: bill
+      password: 111
+      groups: admins
+    - name: pavel
+      password: 222
+      groups: shiny_users

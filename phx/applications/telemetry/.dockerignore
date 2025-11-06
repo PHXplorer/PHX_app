@@ -1,0 +1,8 @@
+*
+!app.R
+!www
+!renv.lock
+!renv/
+renv/library
+renv/staging
+!.Rprofile

@@ -1,0 +1,7 @@
+default:
+  alert_list:
+    reference_grid_size: false
+    vif_not_enough_independent_variables: false
+    vif_has_aliased_variable: false
+    vif_exceed_threshold: false
+    one_in_ten_rule: false

@@ -1,0 +1,64 @@
+{
+  "version": "2.0.0",
+  "presentation": {
+    "echo": false,
+    "reveal": "always",
+    "focus": false,
+    "panel": "dedicated",
+    "showReuseMessage": true
+  },
+  "tasks": [
+    {
+      "label": "Create terminals",
+      "dependsOn": [
+        "JS",
+        "Sass"
+      ],
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "JS",
+      "type": "shell",
+      "command": "",
+      "options": {
+        "shell": {
+          "executable": "R",
+          "args": [
+            "-e",
+            "rhino::build_js(TRUE)"
+          ]
+        }
+      },
+      "isBackground": false,
+      "problemMatcher": [],
+      "presentation": {
+        "group": "radian-build"
+      }
+    },
+    {
+      "label": "Sass",
+      "type": "shell",
+      "command": "",
+      "options": {
+        "shell": {
+          "executable": "R",
+          "args": [
+            "-e",
+            "rhino::build_sass(TRUE)"
+          ]
+        }
+      },
+      "isBackground": false,
+      "problemMatcher": [],
+      "presentation": {
+        "group": "radian-build"
+      }
+    }
+  ]
+}

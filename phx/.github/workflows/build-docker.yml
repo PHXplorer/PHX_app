@@ -1,0 +1,72 @@
+name: Build Docker container
+on: push
+permissions:
+  contents: read
+  packages: write
+jobs:
+  main:
+    name: Build and push docker image
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Sets MODIFIED_BRANCH_NAME
+      env:
+        name: "${{ github.ref_name }}"
+      run: |
+        # 128 is the maximum length of a Docker tag
+        truncated_branch_name=${name:0:128}
+        echo "MODIFIED_BRANCH_NAME=${truncated_branch_name/\//-}" >> $GITHUB_ENV
+
+    - name: Build and push Docker image for main app
+      uses: docker/build-push-action@v4
+      with:
+        context: applications/main
+        platforms: linux/amd64
+        push: true
+        cache-from: type=gha,scope=h2e-main
+        cache-to: type=gha,mode=max,scope=h2e-main
+        tags: |
+          ghcr.io/bmc-d4e/h2e-main:${{ github.sha }}
+          ghcr.io/bmc-d4e/h2e-main:${{ env.MODIFIED_BRANCH_NAME }}
+          ghcr.io/bmc-d4e/h2e-main:latest
+
+    - name: Build and push Docker image for validator app
+      uses: docker/build-push-action@v4
+      with:
+        context: applications/validator
+        platforms: linux/amd64
+        push: true
+        cache-from: type=gha,scope=h2e-validator
+        cache-to: type=gha,mode=max,scope=h2e-validator
+        tags: |
+          ghcr.io/bmc-d4e/h2e-validator:${{ github.sha }}
+          ghcr.io/bmc-d4e/h2e-validator:${{ env.MODIFIED_BRANCH_NAME }}
+          ghcr.io/bmc-d4e/h2e-validator:latest
+
+    - name: Build and push Docker image for telemetry app
+      uses: docker/build-push-action@v4
+      with:
+        context: applications/telemetry
+        platforms: linux/amd64
+        push: true
+        cache-from: type=gha,scope=h2e-telemetry
+        cache-to: type=gha,mode=max,scope=h2e-telemetry
+        tags: |
+          ghcr.io/bmc-d4e/h2e-telemetry:${{ github.sha }}
+          ghcr.io/bmc-d4e/h2e-telemetry:${{ env.MODIFIED_BRANCH_NAME }}
+          ghcr.io/bmc-d4e/h2e-telemetry:latest

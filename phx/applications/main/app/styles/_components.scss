@@ -1,0 +1,28 @@
+@use "colors" as colors;
+
+.input-with-button {
+  display: flex;
+  border: 1px solid colors.$border-color;
+  margin-left: 1rem;
+
+  .shiny-input-container {
+    margin-bottom: 0;
+
+    input {
+      border: none;
+    }
+  }
+}
+
+.custom-selectpicker {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+  }
+
+  /* stylelint-disable-next-line selector-not-notation */
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+  }
+}

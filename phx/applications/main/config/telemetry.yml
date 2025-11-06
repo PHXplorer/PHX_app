@@ -1,0 +1,3 @@
+default:
+  track_inputs: true
+  track_values: true

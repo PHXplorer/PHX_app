@@ -1,0 +1,14 @@
+default:
+  place_name: 'Boston'
+  state: 'MA'
+  zip5_starts_with: ['021', '022', '024'] # starting digits of zip5 codes in the area
+  county: 'Suffolk'
+  provider_tile: 'CartoDB.Positron'
+  view_long: -71.0689
+  view_lat: 42.3301
+  view_zoom: 12
+  min_zoom: 11
+  polygon_border_color: '#666'
+  max_bound_interval: 0.3 # in degrees
+  msaname15: 'Boston-Cambridge-Newton, MA-NH Metro Area'
+  bivariate_dims: 3

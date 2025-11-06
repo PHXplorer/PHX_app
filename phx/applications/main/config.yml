@@ -1,0 +1,20 @@
+# this section is for default values that are shared between environments
+# if you want to overwrite some of them, you can edit them in sections for specifc environments
+# learn more: https://cran.r-project.org/web/packages/config/vignettes/introduction.html
+default:
+  # level of details for messages logged to console
+  # it's useful to lower it to DEBUG when developing, to get more context of actions
+  rhino_log_level: !expr ifelse(Sys.getenv("ENVIRONMENT", "production") == "development", "TRACE", Sys.getenv("RHINO_LOG_LEVEL", "INFO"))
+  rhino_log_file: !expr Sys.getenv("RHINO_LOG_FILE", NA)
+
+  colors: !expr config::get(file=file.path(getOption('box.path'), 'config', 'colors.yml'))
+  data: !expr config::get(file=file.path(getOption('box.path'), 'config', 'data.yml'))
+  strings: !expr config::get(file=file.path(getOption('box.path'), 'config', 'strings.yml'))
+  numbers: !expr config::get(file=file.path(getOption('box.path'), 'config', 'numbers.yml'))
+  geo: !expr config::get(file=file.path(getOption('box.path'), 'config', 'geo.yml'))
+  categorization: !expr config::get(file=file.path(getOption('box.path'), 'config', 'categorization.yml'))
+  global_filters: !expr config::get(file=file.path(getOption('box.path'), 'config', 'global_filters.yml'))
+  advanced_analytics_framework: !expr config::get(file=file.path(getOption('box.path'), 'config', 'advanced_analytics_framework.yml'))
+  misc: !expr config::get(file=file.path(getOption('box.path'), 'config', 'misc.yml'))
+  external_links: !expr config::get(file=file.path(getOption('box.path'), 'config', 'external_links.yml'))
+  telemetry: !expr config::get(file=file.path(getOption('box.path'), 'config', 'telemetry.yml'))

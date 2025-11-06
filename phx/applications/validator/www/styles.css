@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #57A29B;
+  --secondary-color: #fff;
+  --font-bold: bold;
+  --font-size-default: 15px;
+  --font-size-large: 20px;
+  --margin-small: 7.5px;
+  --margin-medium: 15px;
+  --border-radius: 10px;
+  --height-default: 40px;
+}
+
+.brand-link {
+  margin-left: var(--margin-medium);
+  font-weight: var(--font-bold);
+}
+
+.custom-control.custom-switch {
+  display: none;
+}
+
+.controls-container {
+  margin-left: var(--margin-small);
+}
+
+.bmc-btn {
+  height: var(--height-default);
+  margin-bottom: var(--margin-medium);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-default);
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.bmc-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.result-header-text {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+.option.selected {
+  background: var(--primary-color);
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+}

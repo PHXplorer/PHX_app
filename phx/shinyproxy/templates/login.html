@@ -1,0 +1,82 @@
+<!--
+
+    ContainerProxy
+
+    Copyright (C) 2016-2024 Open Analytics
+
+    ===========================================================================
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the Apache License as published by
+    The Apache Software Foundation, either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    Apache License for more details.
+
+    You should have received a copy of the Apache License
+    along with this program.  If not, see <http://www.apache.org/licenses/>
+
+-->
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+>
+    <style>
+      .body-login {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .agreement-checkbox {
+        margin-bottom: 1rem;
+      }
+    </style>
+
+    <head lang="en">
+        <title th:text="${title}"></title>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link media="screen" rel="stylesheet" th:href="@{${bootstrapCss}}"/>
+        <link media="screen" rel="stylesheet" th:href="@{/css/login.css}"/>
+        <link media="screen" rel="stylesheet" th:href="@{${fontAwesomeCss}}"/>
+        <script th:src="@{${jqueryJs}}"></script>
+        <script th:src="@{${bootstrapJs}}"></script>
+    </head>
+
+    <body class="body-login">
+        <div class="container container-login">
+            <form class="form-signin" method="POST" th:action="@{/login}">
+                <h2 class="form-signin-heading">Please sign in:</h2>
+                <div class="alert alert-danger" th:if="${error}">
+                    <strong>Could not sign in!</strong><br/><span th:text="${error}"></span>.
+                </div>
+                <label class="sr-only" for="username">Email address</label>
+                <input autofocus="autofocus" class="form-control" id="username" name="username" placeholder="User name"
+                       required="required">
+                <label class="sr-only" for="password">Password</label>
+                <input class="form-control" id="password" name="password" placeholder="Password" required="required"
+                       type="password">
+                <div class="agreement-checkbox">
+                  <input
+                      class=""
+                      id="license-agreement"
+                      name="license-agreement"
+                      type="checkbox"
+                      required="required"
+                      oninvalid="this.setCustomValidity('Please accept the license agreement')"
+                      oninput="this.setCustomValidity('')"
+                  >
+                  <label for="license-agreement">
+                      I accept the <a href="https://github.com/BMC-D4E/supporting-documentation/blob/main/h2e-license.pdf" target="_blank">license agreement</a>
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+@import "colors";
+
+.plus-minus-buttons-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.375rem;
+
+  button {
+    margin: 0 1%;
+    background-color: #00867b1a;
+    border: 0;
+    outline: none !important;
+    font-size: inherit;
+    padding: revert;
+
+    &:hover {
+      background-color: #e2e6ea;
+    }
+
+    &:focus {
+      background-color: #00867b1a;
+    }
+
+    .fas {
+      color: $bmc-color;
+    }
+  }
+}

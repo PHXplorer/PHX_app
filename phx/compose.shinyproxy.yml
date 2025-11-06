@@ -1,0 +1,52 @@
+services:
+  shinyproxy:
+    container_name: shinyproxy
+    build:
+      context: .
+      dockerfile: ./shinyproxy/Dockerfile
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+      - .env.local
+      - .env.modified_docker_tag # automatically created in `start.sh` or `start.ps1` script, gets deleted after the script finishes
+    environment:
+      # Fallback values assume usage of MS SQL Server running in a docker container
+      DB_DRIVER: ${DB_DRIVER:-mssql}
+      DB_HOST_DEV: ${DB_HOST_DEV:-mssql}
+      DB_PORT_DEV: ${DB_PORT_DEV:-1433}
+      DB_NAME_DEV: ${DB_NAME_DEV:-H2E_Synthea}
+      DB_USER_DEV: ${DB_USER_DEV:-sa}
+      DB_PASS_DEV: ${DB_PASS_DEV:-Password12345!}
+      DB_HOST_PROD: ${DB_HOST_PROD:-mssql}
+      DB_PORT_PROD: ${DB_PORT_PROD:-1433}
+      DB_NAME_PROD: ${DB_NAME_PROD:-H2E_Synthea}
+      DB_USER_PROD: ${DB_USER_PROD:-sa}
+      DB_PASS_PROD: ${DB_PASS_PROD:-Password12345!}
+      SHINYPROXY_MAINAPP_CONFIG_DIR_VOLUME: ${WORKING_DIRECTORY}/applications/main/config:/application/config
+      SHINYPROXY_MAINAPP_CONFIG_FILE_VOLUME: ${WORKING_DIRECTORY}/applications/main/config.yml:/application/config.yml
+      SHINYPROXY_TELEMETRY_DB_VOLUME: ${WORKING_DIRECTORY}/data/telemetry.txt:/application/telemetry.txt
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./shinyproxy_logs:/opt/shinyproxy/logs
+      - ./shinyproxy/application.yml:/opt/shinyproxy/application.yml
+      - ./shinyproxy/admin_users.txt:/opt/shinyproxy/admin_users.txt
+      - ./shinyproxy/regular_users.txt:/opt/shinyproxy/regular_users.txt
+      - ./shinyproxy/users.yml:/opt/shinyproxy/users.yml
+    networks:
+      - main-network
+    depends_on:
+      - redis
+
+  # Redis layer for caching the requests
+  redis:
+    container_name: redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    networks:
+      - main-network
+
+networks:
+  main-network:
+    name: main-network

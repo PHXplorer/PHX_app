@@ -1,0 +1,14 @@
+*
+!app/
+!tests/
+!config/
+!app.R
+!dependencies.R
+!.renvignore
+!rhino.yml
+!config.yml
+!renv.lock
+!renv/cache
+!renv/activate.R
+!renv/settings.json
+!.Rprofile

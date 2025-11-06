@@ -1,0 +1,158 @@
+@import "colors";
+
+@mixin text-row {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.shiny-download-link,
+.global-filters-extra-controls button,
+.global-filters-container .plus-minus-buttons-container button {
+  background: $bmc-white;
+  border-style: none;
+  border-radius: 2px;
+  height: 100%;
+}
+
+.global-filters-container {
+  font-size: 1.125rem !important;
+  font-weight: 800 !important;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  height: auto;
+  padding-inline: 7.5px;
+  margin: 0 0 1rem;
+
+  .global-filters-sentence-container {
+    @include text-row;
+
+    flex-wrap: wrap;
+  }
+
+  .global-filters-extra-controls {
+    @include text-row;
+  }
+
+  label > span {
+    font-weight: 800 !important;
+  }
+
+  .year-slider-container {
+    height: 30px;
+
+    .text-container {
+      display: flex;
+      gap: 0.375rem;
+    }
+
+    .shiny-input-container {
+      .checkbox {
+        label {
+          display: inline-block;
+          margin-bottom: 0;
+          border-bottom: dashed;
+          color: $bmc-color;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #e2e6ea;
+          }
+
+          input {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .slider-container {
+      z-index: 1;
+      position: relative;
+      box-shadow: 0 1px 8px 0 rgb(0 0 0 / 10%);
+      margin-top: 8px;
+
+      .shiny-input-container {
+        padding: 10px;
+        background: white;
+        border-radius: 4px;
+
+        /* stylelint-disable-next-line selector-class-pattern */
+        .irs.irs--shiny.irs-with-grid {
+          .irs {
+            height: 0;
+
+            .irs-line {
+              background: #00867b1a;
+            }
+
+            .irs-from {
+              display: none;
+            }
+
+            .irs-to {
+              display: none;
+            }
+
+            .irs-min {
+              display: none;
+            }
+
+            .irs-max {
+              display: none;
+            }
+
+            .irs-single {
+              display: none;
+            }
+          }
+
+          .irs-bar {
+            background: $bmc-color;
+          }
+
+          /* stylelint-disable-next-line selector-class-pattern */
+          .irs-bar--single {
+            display: none;
+          }
+
+          .irs-handle {
+            background: #89dad3;
+            border: #89dad3;
+          }
+
+          .irs-handle.single {
+            background: $bmc-color;
+            border: $bmc-color;
+          }
+
+          .irs-grid {
+            .irs-grid-text {
+              font-size: 12px;
+              color: $bmc-color;
+              font-weight: 400;
+            }
+
+            .irs-grid-pol {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .global-filters-dimensions {
+    @include text-row;
+
+    .text-button {
+      border: 0;
+      padding: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      background: inherit;
+      border-bottom: dashed;
+      color: $bmc-color;
+    }
+  }
+}
