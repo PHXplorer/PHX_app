@@ -1,6 +1,4 @@
-![H2E Logo](docs/assets/h2e_logo.png)
-
-# Health Equity Explorer by Boston Medical Center
+# Population Health Explorer by Boston Medical Center
 
 ## About the project
 

@@ -78,7 +78,7 @@ ui <- function(id) {
       title = tags$a(
         class = "brand-link bg-white",
         href = "#",
-        tags$img(src = "static/h2e_logo.png")
+        tags$img(src = "static/PHX_logo.png")
       ),
       status = "white",
       border = FALSE
