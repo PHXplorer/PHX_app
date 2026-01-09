@@ -1,0 +1,263 @@
+@import "typography";
+@import "colors";
+@import "incontrol_table";
+@import "sentence_filters";
+@import "plus_minus_buttons";
+@import "global_filters";
+@import "logistic_regression_filters_container";
+@import "model_metrics";
+@import "knowledge_center";
+@import "map";
+@import "advanced_filters";
+@import "components";
+@import "bmc_dimension_input";
+@import "leaflet";
+@import "advanced_settings";
+
+// sass-lint:disable no-descending-specificity
+html {
+  font-size: 16px;
+  background-color: $background-color;
+}
+
+.main-sidebar {
+  font-size: 1.25em;
+  box-shadow: none !important;
+}
+
+.box-scroll {
+  overflow: auto;
+}
+
+@media (min-width: 992px) {
+  .main-header.navbar {
+    display: none;
+  }
+}
+
+body {
+  color: #000 !important;
+
+  a {
+    text-decoration: underline;
+    color: #000 !important;
+
+    &:hover {
+      color: $bmc-color !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  a.has-popover {
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none !important;
+    }
+  }
+
+  a[data-toggle="collapse"] {
+    text-decoration: none !important;
+  }
+
+  /* Remove underline for nav-item anchors */
+  .nav-item {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+.content {
+  background-color: $background-color;
+}
+
+.brand-link.bg-white {
+  background-color: $background-color !important;
+  border-bottom: 0;
+  text-align: center;
+
+  .brand-text.font-weight-light {
+    font-size: 1.5em;
+    font-weight: 700 !important;
+  }
+}
+
+.sidebar {
+  background-color: $background-color;
+}
+
+// style below is mixed but it targets two places:
+// 1. nav in tabs (like advanced analytics)
+// 2. nav in sidebar (left side)
+// Order is mixed, as it was requested by lint-sass
+// and I was not able to disable no-descending-specificity rule
+
+// nav in tabs
+.nav-tabs {
+  border: 0 !important;
+
+  .nav-link {
+    border-width: 0;
+    color: #000;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+// nav in sidebar
+.nav-sidebar > .nav-item {
+  .nav-link {
+    color: #000 !important;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    // hide icon in expandable sidebar menu
+    i {
+      display: none;
+    }
+  }
+
+  .nav-link.active {
+    font-weight: 700;
+    color: #000 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+// nav in tabs
+.nav-tabs > .nav-item {
+  &:hover {
+    background-color: transpartent;
+
+    .nav-link {
+      background-color: transparent !important;
+    }
+  }
+
+  .nav-link.active {
+    font-weight: normal;
+    color: $bmc-color !important;
+    background-color: transparent;
+    border-bottom-width: 3px;
+    border-bottom-color: $bmc-color;
+  }
+}
+
+// nav in sidebar
+.nav-sidebar > .nav-item:hover {
+  background-color: transpartent;
+
+  .nav-link {
+    background-color: transparent !important;
+  }
+}
+
+.tabbable .nav-item .nav-link[data-toggle="tab"] {
+  margin-bottom: 1.75em;
+}
+
+.dropdown-menu.inner.show {
+  a.dropdown-item {
+    color: $bmc-color !important;
+    font-weight: 700;
+
+    &:active {
+      background-color: $bmc-active-color;
+    }
+  }
+
+  a.dropdown-item.selected {
+    background-color: $bmc-active-color;
+  }
+}
+
+.card-header:has(h3) {
+  display: none;
+}
+
+/* We display card-header inside card-body for avoiding removing the tabs from tabBox elements */
+.card-body {
+  .card-header {
+    display: block;
+  }
+}
+
+em {
+  font-weight: 800;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  color: $bmc-color;
+  font-style: normal;
+  margin: 0.6em 0 1em;
+  display: block;
+}
+
+// overwrite AdminLTE default but not overwrite style for sidebar
+.kc-content p,
+.content p {
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  margin: 0.6em 0;
+}
+
+.brand-link img {
+  width: 100%;
+}
+
+ul.filter-list {
+  list-style: none;
+  display: inline;
+  padding: 0;
+}
+
+ul.filter-list li {
+  display: inline;
+}
+
+.modal-body .shiny-input-container {
+  float: left;
+  padding: 0 1rem;
+  width: 50%;
+}
+
+.filter-headers {
+  clear: both;
+  padding: 2rem 0;
+}
+
+.with-icon {
+  display: inline;
+}
+
+.content-wrapper {
+  height: 100vh;
+}
+
+.load-container.shiny-spinner-hidden {
+  display: none;
+}
+
+.leaflet .legend.leaflet-control {
+  &:first-child {
+    max-width: 22ch;
+  }
+}
+
+.shiny-output-error {
+  min-width: 100%;
+}

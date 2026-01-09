@@ -1,0 +1,9 @@
+default:
+  # threshold for VIF, displayed in form of vertical line
+  vif_threshold: 5
+  # accuracy at which results are displayed
+  decimal_accuracy: 4
+  # minimum sample size for statistical tests to ensure data non-identifiability
+  minimum_sample_size: 15
+  # decide if p-values should be log10 transformed and adjusted
+  fisher_pvalues_log10: TRUE

@@ -1,0 +1,83 @@
+@use "mixins" as mix;
+@use "colors" as colors;
+
+.btn-dimension-input {
+  align-self: stretch;
+  background: transparent;
+  border: none;
+  border-radius: 0%;
+  border-bottom: dashed;
+  color: colors.$bmc-color;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.bmc-dimension-input {
+  /* NOTE: this is some serious low-level optimization */
+  /* stylelint-disable-next-line no-descending-specificity */
+  label,
+  .btn-attribute-selection {
+    @include mix.with-gap;
+  }
+
+  .btn-attribute-selection {
+    justify-content: center;
+    margin-bottom: 0.375rem;
+  }
+
+  .numeric-variable-filter {
+    label {
+      justify-content: center;
+    }
+  }
+}
+
+// NOTE: this is code duplication of _advanced_filters.scss
+// That file is not deleted to maintain interop with the R appoach.
+.bmc-dimension-input-header {
+  display: flex;
+
+  .close {
+    .btn {
+      margin-left: auto;
+    }
+  }
+}
+
+// NOTE: this is code duplication of _advanced_filters.scss
+// That file is not deleted to maintain interop with the R appoach.
+.bmc-dimension-input-footer {
+  background-color: colors.$bmc-white;
+  border-top: 1px solid colors.$border-color;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+
+  button.btn-primary {
+    background-color: colors.$bmc-color;
+    border-color: colors.$bmc-color;
+
+    &:active {
+      background-color: colors.$bmc-color-dark !important;
+      border-color: colors.$bmc-color-dark !important;
+    }
+  }
+}
+
+.dimension-input-default-icon {
+  width: 2.25em;
+  font-size: 1.25em;
+}
+
+.search-highlight {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(to right, rgb(255 225 0 / 10%), rgb(255 225 0 / 70%) 4%, rgb(255 225 0 / 30%));
+  box-decoration-break: clone;
+}

@@ -1,0 +1,22 @@
+@use "colors" as color;
+
+.advanced-settings-modal {
+  .advanced-settings-inputs {
+    .shiny-input-container {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 1rem;
+
+      label {
+        text-align: center;
+        width: 100%;
+      }
+
+      .btn.active {
+        background-color: color.$bmc-color;
+        border-color: color.$bmc-color;
+        color: #fff;
+      }
+    }
+  }
+}

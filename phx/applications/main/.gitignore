@@ -1,0 +1,9 @@
+# {shinytest2}: Ignore new debug snapshots for `$expect_values()`
+*_.new.png
+.Renviron*
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+renv/library

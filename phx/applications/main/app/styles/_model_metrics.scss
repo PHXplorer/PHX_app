@@ -1,0 +1,19 @@
+.model-metrics-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .model-metric {
+    margin-top: 25px;
+    padding: 0 20px;
+    border-left: 1px solid gray;
+    min-width: 200px;
+
+    .model-metric-name {
+      font-weight: 400;
+    }
+
+    .model-metric-value {
+      font-weight: 700;
+    }
+  }
+}

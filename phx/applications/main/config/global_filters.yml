@@ -1,0 +1,23 @@
+default:
+  default_measure: 'cvr_03'
+  start_year: 2018
+  feature_type_label_mapping:
+    Demo Attribute:
+      label: Person Attribute
+  dimensions_to_skip_in_attribute_selection_modal: [fips, zip5]
+  health_dimension:
+    # Corresponds to the unique values in the status column of the `health_dimensions` table
+    status_dict:
+      truthy: 1 # Controlled or Yes or Positive
+      falsy: 0 # Not controlled or No or Negative
+      not_measured: -1 # Not measured
+      excluded: -2 # Excluded
+    prevalence_default_denominator: PTYPE_05 # 2 year lookback active patient
+    default_filter:
+      key: ptype_05
+      value: Active2Yr_Pt
+      category: null # use category for categorized numeric variables
+  default_settings:
+    # Decides on which polygon to use for the map and the attribute type
+    # Either FIPS or ZIP5
+    place_attribute_type: 'ZIP5'

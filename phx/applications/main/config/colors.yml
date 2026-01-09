@@ -1,0 +1,17 @@
+default:
+  purple_color: '#BD86F2'
+  light_purple_color: '#e3cbf9'
+  dark_purple_color: '#9741eb'
+  light_teal_color: '#00d3c1'
+  dark_teal_color: '#003a35'
+  chart_colors:
+    - '#00867B'
+    - '#E97300'
+    - '#EBAB21'
+    - '#EDDA2F'
+    - '#553178'
+    - '#BD86F2'
+    - '#1A86E5'
+    - '#89DAD3'
+    - '#E5435C'
+    - '#1AE52E'

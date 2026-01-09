@@ -1,0 +1,68 @@
+@use "mixins" as mix;
+
+$grid-item-height: 3rem;
+
+.bivariate-legend {
+  display: grid;
+  grid-template-areas:
+    "dim1 grid grid"
+    "dim1 grid grid"
+    "blank dim2 dim2";
+
+  .dim-one {
+    @include mix.with-ellipsis(18ch, "vertical");
+
+    grid-area: dim1;
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    align-self: end;
+    margin: 0;
+    margin-right: 0.5rem;
+
+    &::after {
+      content: " →";
+    }
+  }
+
+  .dim-two {
+    @include mix.with-ellipsis(18ch, "horizontal");
+
+    grid-area: dim2;
+    justify-self: start;
+    margin: 0;
+    margin-top: 0.5rem;
+
+    &::after {
+      content: " →";
+    }
+  }
+
+  .bivariate-grid {
+    --grid-size: 3;
+
+    aspect-ratio: 1;
+    display: grid;
+    grid-area: grid;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+    height: 100%;
+  }
+
+  .bivariate-grid-item {
+    transition: all 150ms;
+    cursor: pointer;
+    color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    line-height: $grid-item-height;
+  }
+
+  .dimmed {
+    opacity: 0.3;
+  }
+
+  .highlight {
+    opacity: 1;
+    color: #fff;
+  }
+}

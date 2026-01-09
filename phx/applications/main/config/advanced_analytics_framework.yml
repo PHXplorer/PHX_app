@@ -1,0 +1,5 @@
+default:
+  active_modules:
+    exploratory_analysis: null
+    statistical_inference: ['about', 'regression_univariate', 'regression_multivariate']
+    machine_learning: null

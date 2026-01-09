@@ -1,0 +1,64 @@
+@import "colors";
+
+.meeting-metric-row {
+  hr {
+    margin: 3px;
+  }
+}
+
+$metric-spacing: 10px;
+
+.meeting-metric {
+  margin-right: $metric-spacing;
+}
+
+.missing-data {
+  margin-left: $metric-spacing;
+  color: gray;
+}
+
+.missing-data-toggle-container {
+  .shiny-input-container {
+    display: inline;
+
+    .checkbox {
+      display: inline;
+    }
+  }
+
+  #legend {
+    margin-left: 25px;
+
+    .shiny-text-output {
+      margin-left: $metric-spacing;
+      color: gray;
+    }
+  }
+}
+
+.rt-tbody {
+  .rt-text-content {
+    font-weight: 500;
+  }
+}
+
+.rt-thead {
+  .rt-tr {
+    background: #fafafa;
+
+    .rt-th {
+      border-right: 1px solid rgb(0 0 0 / 6%);
+
+      .rt-th-inner {
+        .rt-text-content {
+          color: rgb(0 0 0 / 45%);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.incontrol-table-container {
+  min-height: 104px;
+}

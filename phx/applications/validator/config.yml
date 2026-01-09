@@ -1,0 +1,82 @@
+default:
+  database:
+    db_driver: !expr Sys.getenv('DB_DRIVER')
+    db_host: !expr Sys.getenv('DB_HOST')
+    db_port: !expr Sys.getenv('DB_PORT')
+    db_name: !expr Sys.getenv('DB_NAME')
+    db_user: !expr Sys.getenv('DB_USER')
+    db_pass: !expr Sys.getenv('DB_PASS')
+  action_level:
+    stop_threshold_value: 0.2
+  bmc_spinner_color:
+    - '#57A29B'
+  all_tables:
+    - demo_attributes
+    - equity_dimensions
+    - feature_details
+    - fips_data
+    - zip5_data
+  table_headers:
+    demo_attributes:
+      - person_id
+      - year
+      - sex
+      - race
+      - ethnicity
+      - age
+      - age_group
+      - fips
+      - zip5
+    equity_dimensions:
+      - person_id
+      - year
+      - measurement_date
+      - equity_dimension
+      - value
+      - value_as_number
+      - featureid
+      - status
+      - status_as_string
+    feature_details:
+      - displayorder
+      - displayorder_big
+      - display
+      - t_order
+      - feature_type
+      - domainorder
+      - domain
+      - sd_order
+      - subdomain
+      - ssd_order
+      - subsubdomain
+      - item_order
+      - label
+      - source
+      - featureid
+      - description
+      - full_description
+      - value_type
+      - ref_cat
+      - reverse
+  validation_results:
+    check_joins_fips:
+      pass_text: '✅ Data available for demo_attributes + fips_data by fips'
+      fail_text: '❌ No data available for demo_attributes + fips_data by fips'
+    check_joins_zip5:
+      pass_text: '✅ Data available for demo_attributes + zip5_data by zip5'
+      fail_text: '❌ No data available for demo_attributes + zip5_data by zip5'
+    check_joins_person_id_year:
+      pass_text: '✅ Data available for demo_attributes + equity_dimensions by person_id and year'
+      fail_text: '❌ No data available for demo_attributes + equity_dimensions by person_id and year'
+    check_joined_fields_fips:
+      pass_text: '✅ All fields defined in feature_details are present in fips_data'
+      fail_text: '❌ Fields defined in feature_details, not present in fips_data 👇'
+    check_joined_fields_fips_act:
+      pass_text: '✅ All fields present in fips_data are defined in feature_details'
+      fail_text: '❌ Fields present in fips_data, not defined in feature_details 👇'
+    check_joined_fields_zip5:
+      pass_text: '✅ All fields defined in feature_details are present in zip5_data'
+      fail_text: '❌ Fields defined in feature_details, not present in zip5_data 👇'
+    check_joined_fields_zip5_act:
+      pass_text: '✅ All fields present in zip5_data are defined in feature_details'
+      fail_text: '❌ Fields present in zip5_data, not defined in feature_details 👇'

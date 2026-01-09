@@ -1,0 +1,46 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:16.3-alpine3.20
+    profiles: ["postgres"]
+    ports:
+      - 5432:5432
+    environment: 
+      - POSTGRES_PASSWORD=Password12345!
+    volumes:
+      - ./data:/opt/backup
+    shm_size: 1g
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      timeout: 3s
+      retries: 15
+      start_period: 10s
+    networks:
+      - network
+  mssql:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server:2022-CU12-ubuntu-22.04
+    profiles: ["mssql"]
+    user: root
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12345!
+      - MSSQL_PID=Developer
+    volumes:
+      - ./data:/opt/backup
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$${MSSQL_SA_PASSWORD}" -Q "SELECT 1" -b -o /dev/null
+      interval: 10s
+      timeout: 3s
+      retries: 15
+      start_period: 10s
+    networks:
+      - network
+
+networks:
+  network:
+    name: main-network
+    external: true

@@ -1,0 +1,175 @@
+name: Rhino Test
+
+on:
+  push:
+    paths:
+      - 'applications/main/**'
+      - 'benchmarks/**/*.sh'
+      - 'benchmarks/**/*.R'
+      - '.github/workflows/**'
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    working-directory: ./applications/main
+
+env:
+  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+  TEST_LOCATION: GithubActions
+  APP_STARTUP_MAX: 30 # 20 seconds
+  ENSURE_DATA_ANONYMITY: false
+  USE_MOCK_DB_DATA: true
+  ACCEPT_EULA: Y
+
+jobs:
+  main:
+    name: Run linters and tests
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: ./applications/main
+    strategy:
+      max-parallel: 1
+      fail-fast: true
+      matrix:
+        db_driver: ['sqlite', 'mssql', 'postgres']
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      DB_DRIVER: '${{ matrix.db_driver }}'
+      DB_HOST: localhost
+      DB_PORT: ${{ (matrix.db_driver == 'mssql') && 1433 || 5432 }}
+      DB_NAME: H2E_Synthea
+      DB_USER: ${{ (matrix.db_driver == 'mssql') && 'sa' || 'postgres' }}
+      DB_PASS: Password12345!
+    services:
+      postgres:
+        image: ${{ (matrix.db_driver == 'postgres') && 'postgres:16.3-alpine3.20' || '' }}
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: Password12345!
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+      mssql:
+        image: ${{ (matrix.db_driver == 'mssql') && 'mcr.microsoft.com/mssql/server:2022-CU12-ubuntu-22.04' || '' }}
+        env:
+          ACCEPT_EULA: Y
+          MSSQL_SA_PASSWORD: Password12345!
+          MSSQL_PID: Developer
+        options: >-
+          --health-cmd "/opt/mssql-tools/bin/sqlcmd -U sa -P Password12345! -Q 'select 1' -b -o /dev/null"
+          --health-interval 60s
+          --health-timeout 30s
+          --health-start-period 20s
+          --health-retries 3
+        ports:
+          - 1433:1433
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Create postgres database
+        if: matrix.db_driver == 'postgres'
+        run: PGPASSWORD=Password12345! createdb -h localhost -U postgres H2E_Synthea
+
+      - name: Create mssql database
+        if: matrix.db_driver == 'mssql'
+        run: >
+          /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Password12345! -Q "CREATE DATABASE H2E_Synthea"
+
+      - name: Extract R version from lockfile
+        run: printf 'R_VERSION=%s\n' "$(jq --raw-output .R.Version renv.lock)" >> $GITHUB_ENV
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ env.R_VERSION }}
+
+      - name: Setup system dependencies
+        shell: sudo bash {0}
+        run: >
+          apt-get update && apt-get install --yes --no-install-recommends
+          libcurl4-openssl-dev libgdal-dev libproj-dev libudunits2-dev libgit2-dev
+          libhiredis-dev  gnupg msodbcsql18
+
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          working-directory: applications/main
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Lint R
+        if: always()
+        shell: Rscript {0}
+        run: rhino::lint_r()
+
+      - name: Lint JavaScript
+        if: always()
+        shell: Rscript {0}
+        run: rhino::lint_js()
+
+      - name: Lint Sass
+        if: always()
+        shell: Rscript {0}
+        run: rhino::lint_sass()
+
+      - name: Build JavaScript
+        if: always()
+        shell: Rscript {0}
+        run: rhino::build_js()
+
+      - name: Build Sass
+        if: always()
+        shell: Rscript {0}
+        run: rhino::build_sass()
+
+      - name: Run R unit tests
+        if: always()
+        shell: Rscript {0}
+        run: rhino::test_r()
+
+      - name: Run e2e tests
+        if: always()
+        run: Rscript -e 'rhino::test_e2e()' | grep '^##teamcity\[testSuiteFinished' > cypress.log
+
+      - name: Extract benchmark data from Cypress logs
+        if: ${{ ! contains(fromJson('["main", "develop"]'), github.ref_name) && ! startsWith(github.ref_name, 'release/') }}
+        run: |
+          Rscript ../../benchmarks/cypress-process-output.R
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add ../../benchmarks/cypress-benchmarks/
+          git commit -m "perf: save cypress performance results"
+          git pull --rebase
+          git push
+
+      - name: Generate perf charts
+        if: ${{ ! contains(fromJson('["main", "develop"]'), github.ref_name) && ! startsWith(github.ref_name, 'release/') }}
+        run: |
+          Rscript ../../benchmarks/cypress-visualize-output.R
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add ../../benchmarks/
+          git commit -m "perf: save cypress performance results"
+          git pull --rebase
+          git push
+
+      - name: Archive test snapshots
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: testing_artifacts
+          path: |
+            applications/main/tests/testthat/_snaps/
+            applications/main/tests/cypress/screenshots/

@@ -1,0 +1,70 @@
+default:
+  heatmap_footnote: >
+    Results displayed as -log10 transformed p-values, adjusted for multiple testing using the Benjamini-Hochberg method. Higher value indicates more significant association between variables.
+  advanced_analytics_intro: >
+    Use this tool to better understand the underlying data, explore relationships between health outcomes and predictor variables by creating logistic regression models, and evaluate the performance of these models.
+    When building your model, please use appropriate controls, be aware of the potential for bias, interpret the results carefully, and understand the limitations of models created in this context.
+  # message displayed when you run app for the first time
+  agree_message: >
+    Before proceeding, please take time to explore data related to your outcome and variables of interest.
+    Please consider collinearity and confouding influences when determining which variables to include.
+    Remember that correlation does not equate to causation, and that results from these analysis should be considered exploratory.
+  knowledge_center:
+    - title: General Information
+      content: >
+        <em>The health care we receive often has only a small impact on our overall health.
+        Combining electronic health record (EHR) data with place-based data about the neighborhoods where we live,
+        learn, and work can help us better understand the many factors that drive human health and well-being.</em>
+        <h5>Population Health</h5>
+        <p>Population Health is when everyone has a fair and just opportunity to attain their highest level of health (CDC). Achieving population health requires more than just improving access to healthcare (though this is important). Population health requires addressing social and economic barriers to health and wellness, reducing bias and increasing cultural competence amongst healthcare professionals, and working to eliminate entrenched systems of injustice in our communities.
+        <h5>Limitations</h5>
+        <p>Results from this tool are not to be used for patient care or for research purposes. To request access to this data for research purposes, please contact your OMOP administrator.</p>
+    - title: About the data
+      content: >
+        <h5>Health Outcome Data</h5>
+        <p>Health outcomes are ways that we measure and track health over time.
+        <p>Outcomes can be based on measurements like blood pressure, HbA1c, or BMI. Outcomes can also be based on Social and Environmental Drivers of Health, like access to stable housing.
+        <p>To create an outcome measurement, we identify a group of patients that meet a set of criteria, and a related metric. We then assess that metric for each patient each year to see what proportion of our target population meets the metric criteria.
+        <p>Health outcomes are generated from data stored in the OMOP Common Data Model. Generally, each outcome is computed once per eligible patient per year. If your OMOP instance does not have the data required to compute an outcome, your site can choose to either not generate and display that outcome, or to edit the outcome generation script to use data that you do have available at your site.
+        <p>For more information about the OMOP Common Data Model, please visit:<br>
+        <a href="https://www.ohdsi.org/data-standardization/" target="_blank">OHDSI - OMOP Common Data Model</a>
+        <p>For more information about outcome generation, please review the technical documentation.<br>
+        <a href="https://phxplorer.github.io/PHX/health_dimensions_files/health_dimensions/health%20condition%20-%20medical/bmi_adult_cvr_01/bmi_cvr_01_tsd_v01_try.pdf" target="_blank">BMI Adult - Techinical Specifications Document</a>
+        <h5>Dimension Data</h5>
+        <p>When we gather information about health outcomes, we also gather information about the patients that have these outcomes, such as race, sex, age, and neighborhood.
+        <p>Dimensions can also be information about a patient's lived experience, like access to enough food, or neighborhood-level information about where a patient lives, like quality of education, or exposure to environmental toxins.
+        <p>Dimensions are generated both from data stored in the OMOP Common Data Model and from third party data based on a where a patient lived during a given time period. When applicable, dimensions are generated for a particular time period for a given patient, and can change over time (for example, a person’s weight can change over time – the value in a weight-related dimension will reflect the person’s weight for the relevant time period only). We avoid imputing data, and do not carry over dimension value to future years unless clinically warranted.
+        <h5>Geographic Data (GIS)</h5>
+        <p>Place-based data, or data about geographic areas where patients live, work, and learn, is generally sourced from third-parties (see below). This data can be mapped to patient addresses using zip codes or census tracts. Once this mapping is complete, we can use this information to understand more about the areas where people spend time and how areas might impact patients’ health. We can also understand more about the health of people in certain areas, and how health varies by neighborhood and place.
+        <p>Geospatial information systems are complex – we recommend consulting an expert in this field if you plan to use GIS data in your research.
+        <p>Examples of third party data included in this application:<br>
+        <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/index.html" target="_blank">CDC – Social Vulnerability Index</a><br>
+        <a href="https://www.diversitydatakids.org/child-opportunity-index" target="_blank">Child Opportunity Index</a>
+    - title: Advanced Analytics
+      content: >
+        <h5>What is logistic regression?</h5>
+        <p>Logistic regression is used to model the probability of a binary outcome (here, whether a patient meets the criteria for a health outcome).</p>
+        <p>It is used to predict the likelihood of an event occurring based on the relationship between explanatory variables and the dependent variable.</p>
+        <h5>What are Estimated Marginal Means (EMM)?</h5>
+        <p>Estimated Marginal Means (EMM) provide a more interpretable understanding of the results of a logistic regression analysis.
+        EMM are calculated by taking the average of each group's predicted values after adjusting for the other variables in the model.
+        This allows for the comparison of different groups while controlling for the effects of other variables in the model.</p>
+        <p>Data is fit to a logistic regression model to predict the likelihood of a patient meeting the criteria for a given metric.
+        We then use EMM to calculate the average likelihood of a patient meeting the criteria for a given metric within different subgroups (by race, age, sex, etc.).
+        This can help identify potential risk factors or interventions. Resulting predicted probabilities and odds are shown below.</p>
+  error_messages:
+    missing_independent_variables: 'You have to include independent variables in your model.'
+    ml_missing_predictors: 'Please select some predictors.'
+    needed_two_interact_vars: 'Select either nothing or a pair of variables to interact.'
+    reference_grid_size_too_big: 'Reference grid for EMM is too big to calculate. Consider building a simpler model to see the results.'
+    not_enough_categories: "Some independent variables doesn't have enough categories for selected health outcome: {str_c(selected_vars[fails_test], collapse = ', ')}."
+    eda_missing_var: 'Please select a variable for EDA.'
+    fisher_selection: "Select variables for Fisher's Exact Test"
+    vif_missing_independent_variables: 'You need to include at least 2 independent variables in the model to calculate VIF.'
+  info_boxes:
+    missing_data: 'Use to evaluate for systematic missingness. Defined as patients who meet the criteria to be included in specified health outcome, but who were not assessed, so are not included in the denominator.'
+    fishers_exact_test: "Fisher's exact test is a statistical test used to determine if there is a nonrandom association between two categorical variables. Here, results are adjusted for multiple testing, and -log10 transformed to increase interpretability and stabilize the distribution of the p-values."
+    vif_plot: 'Measure of multicollinearity in the model. VIF is calculated for each independent variable in the model. VIF of 1 indicates no multicollinearity; VIF > 1 indicates increasing levels of multicollinearity. A high VIF value indicates that the variance for the coefficient of that variable is inflated due to correlation with other variables in the model - the coefficient is less reliable and its significance may be overstated.'
+    model_metrics: 'Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.'
+    model_performance: 'Use these outputs to understand how well your model fits the data and compare performance of different models.'
+    model_output: ' .'

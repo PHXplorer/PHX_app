@@ -1,0 +1,21 @@
+default:
+  ordinal_categories:
+    # When assigning the order of the variables, keep in mind that, unless reverse is 1, the low values will be darker on the map
+    - ['Very Low', 'Low', 'Moderate', 'High', 'Very High']
+  numeric_breaks:
+    50 - 50:
+      prefix: 'H'
+      values: [0, 0.5, 1]
+    Lower 90% - Top 10%:
+      prefix: 'P'
+      values: [0, 0.9, 1]
+    Tertiles:
+      prefix: 'T'
+      values: [0, 0.33, 0.66, 1]
+    Quartiles:
+      prefix: 'Q'
+      values: [0, 0.25, 0.5, 0.75, 1]
+    Deciles:
+      prefix: 'D'
+      values: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+  numeric_precision: 2

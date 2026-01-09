@@ -1,0 +1,16 @@
+@mixin with-gap {
+  display: flex !important;
+  gap: 0.375rem;
+}
+
+@mixin with-ellipsis($size: "18ch", $direction: "horizontal") {
+  @if $direction == "horizontal" {
+    max-width: $size;
+  } @else {
+    max-height: $size;
+  }
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

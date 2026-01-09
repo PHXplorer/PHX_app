@@ -1,0 +1,53 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": false
+    }
+  },
+  "onCreateCommand": "./.devcontainer/onCreateCommand.sh",
+  "runArgs": [
+    "--env-file",
+    "../../.env",
+    "--env-file",
+    "../../.env.local",
+    "--network",
+    "main-network"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "REditorSupport.r",
+        "RDebugger.r-debugger",
+        "vivaxy.vscode-conventional-commits",
+        "apinix.indent-jump",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "kisstkondoros.vscode-gutter-preview",
+        "oderwat.indent-rainbow",
+        "naumovs.color-highlight",
+        "stylelint.vscode-stylelint"
+      ],
+      "settings": {
+        "r.rterm.linux": "/usr/local/bin/radian",
+        "r.bracketedPaste": true,
+        "git.openRepositoryInParentFolders": "always",
+        "remote.autoForwardPorts": false,
+        "otherPortsAttributes": {
+          "onAutoForward": "ignore"
+        }
+      }
+    }
+  },
+  "remoteEnv": {},
+  "forwardPorts": [
+    3838
+  ]
+}

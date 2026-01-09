@@ -1,0 +1,14 @@
+default:
+  files:
+    demo_attributes: !expr file.path(getOption('box.path'), "tests/testthat/data/demo_attributes.csv")
+    health_dimensions: !expr file.path(getOption('box.path'), "tests/testthat/data/equity_dimensions.csv")
+    feature_details: !expr file.path(getOption('box.path'), "tests/testthat/data/feature_details.csv")
+    fips_data: !expr file.path(getOption('box.path'), "tests/testthat/data/fips_data.csv")
+    zip5_data: !expr file.path(getOption('box.path'), "tests/testthat/data/zip5_data.csv")
+  database:
+    db_driver: !expr Sys.getenv("DB_DRIVER")
+    db_host: !expr Sys.getenv("DB_HOST")
+    db_port: !expr Sys.getenv("DB_PORT")
+    db_name: !expr Sys.getenv("DB_NAME")
+    db_user: !expr Sys.getenv("DB_USER")
+    db_pass: !expr Sys.getenv("DB_PASS")

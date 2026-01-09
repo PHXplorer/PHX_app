@@ -1,0 +1,156 @@
+spring:
+  config:
+    import:
+      - users.yml
+
+proxy:
+  title: BMC PHX
+  favicon-path: favicon.ico
+  logo-url: https://www.bmc.org/themes/custom/bmc_base_theme/assets/images/logos/bmc_logo_white.svg
+  template-path: ./templates
+  heartbeat-rate: 10000
+  heartbeat-timeout: 60000
+  container-wait-time: 600000
+  container-log-path: ./logs/container-logs
+  port: 8080
+  authentication: ${SHINYPROXY_AUTH_METHOD}
+  admin-groups: ${SHINYPROXY_ADMIN_GROUP}
+  ldap:
+  - url: ${LDAP_URI_SHINYPROXY}
+    manager-dn: ${LDAP_ADMIN_DN}
+    manager-password: ${LDAP_ADMIN_PASSWORD}
+    user-search-filter: ${AD_USER_SEARCH_FILTER}
+    user-search-base: ${AD_USER_SEARCH_BASE}
+    group-search-filter: ${AD_GROUP_SEARCH_FILTER}
+    group-search-base: ${AD_GROUP_SEARCH_BASE}
+  docker:
+    internal-networking: true
+  specs:
+  - id: main_application
+    access-groups: ["${AUTH_ADMIN_GROUP}", "${AUTH_REGULAR_GROUP}"]
+    access-expression: "#{toList('${REGULAR_USERS}', ',').contains(userId) or toList('${ADMIN_USERS}', ',').contains(userId)}"
+    display-name: Population Health Explorer
+    description: Production version (main branch), connected to the production database
+    container-cmd: ["R", "-e", "shiny::runApp()"]
+    container-image: ghcr.io/bmc-d4e/h2e-main:main
+    container-network-connections: ["main-network"]
+    container-env-file: .env
+    container-env:
+      APP_ID: 'prod'
+      ENVIRONMENT: 'production'
+      DB_DRIVER: ${DB_DRIVER}
+      DB_HOST: ${DB_HOST_PROD}
+      DB_PORT: ${DB_PORT_PROD}
+      DB_NAME: ${DB_NAME_PROD}
+      DB_USER: ${DB_USER_PROD}
+      DB_PASS: ${DB_PASS_PROD}
+    container-volumes:
+      - ${SHINYPROXY_MAINAPP_CONFIG_DIR_VOLUME}
+      - ${SHINYPROXY_MAINAPP_CONFIG_FILE_VOLUME}
+      - ${SHINYPROXY_TELEMETRY_DB_VOLUME}
+  - id: dev_application
+    access-groups: ["${AUTH_ADMIN_GROUP}"]
+    access-expression: "#{toList('${ADMIN_USERS}', ',').contains(userId)}"
+    parameters:
+      definitions:
+        - id: git_branch
+          display-name: Git Branch
+          description: Main branch or develop branch
+          default-value: develop
+        - id: database_env
+          display-name: Database Environment
+          description: Production or Development
+          default-value: DEV
+        - id: database_driver
+          display-name: Database Driver
+          description: MS SQL or PostgreSQL
+          default-value: ${DB_DRIVER}
+      value-sets:
+        - values:
+            git_branch: [main, develop, '${DOCKER_TAG}']
+            database_env: [PROD, DEV, SYNTHEA]
+            database_driver: [mssql, postgres, sqlite]
+    display-name: "[ADMIN] Population Health Explorer"
+    description: Ability to choose code branch, database environment, and database driver - to test new features, new data or their combinations.
+    container-cmd: ["R", "-e", "shiny::runApp()"]
+    container-image: "ghcr.io/bmc-d4e/h2e-main:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+    container-network-connections: ["main-network"]
+    container-env-file: .env
+    container-env:
+      APP_ID: 'dev'
+      ENVIRONMENT: 'development'
+      GIT_BRANCH: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+      DATABASE_ENV: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env')}"
+      DB_DRIVER: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_driver')}"
+      DB_HOST: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_HOST_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_HOST_DEV}' : '${DB_HOST_SYNTHEA}'}"
+      DB_PORT: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_PORT_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_PORT_DEV}' : '${DB_PORT_SYNTHEA}'}"
+      DB_NAME: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_NAME_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_NAME_DEV}' : '${DB_NAME_SYNTHEA}'}"
+      DB_USER: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_USER_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_USER_DEV}' : '${DB_USER_SYNTHEA}'}"
+      DB_PASS: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_PASS_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_PASS_DEV}' : '${DB_PASS_SYNTHEA}'}"
+    container-volumes:
+    - ${SHINYPROXY_MAINAPP_CONFIG_DIR_VOLUME}
+    - ${SHINYPROXY_MAINAPP_CONFIG_FILE_VOLUME}
+    - ${SHINYPROXY_TELEMETRY_DB_VOLUME}
+  - id: validator_prod
+    access-groups: ["${AUTH_ADMIN_GROUP}"]
+    access-expression: "#{toList('${ADMIN_USERS}', ',').contains(userId)}"
+    parameters:
+      definitions:
+        - id: git_branch
+          display-name: Git Branch
+          description: Main branch or develop branch
+          default-value: main
+        - id: database_env
+          display-name: Database Environment
+          description: Production or Development
+          default-value: PROD
+        - id: database_driver
+          display-name: Database Driver
+          description: MS SQL or PostgreSQL
+          default-value: ${DB_DRIVER}
+      value-sets:
+        - values:
+            git_branch: [main, develop, '${DOCKER_TAG}']
+            database_env: [PROD, DEV, SYNTHEA]
+            database_driver: [mssql, postgres, sqlite]
+    display-name: "[ADMIN] Data Validator"
+    description: Run data checks
+    container-cmd: ["R", "-e", "shiny::runApp()"]
+    container-image: "ghcr.io/bmc-d4e/h2e-validator:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+    container-network-connections: ["main-network"]
+    container-env-file: .env
+    container-env:
+      DB_DRIVER: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_driver')}"
+      DB_HOST: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_HOST_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_HOST_DEV}' : '${DB_HOST_SYNTHEA}'}"
+      DB_PORT: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_PORT_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_PORT_DEV}' : '${DB_PORT_SYNTHEA}'}"
+      DB_NAME: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_NAME_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_NAME_DEV}' : '${DB_NAME_SYNTHEA}'}"
+      DB_USER: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_USER_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_USER_DEV}' : '${DB_USER_SYNTHEA}'}"
+      DB_PASS: "#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'PROD' ? '${DB_PASS_PROD}' : proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('database_env') == 'DEV' ? '${DB_PASS_DEV}' : '${DB_PASS_SYNTHEA}'}"
+  - id: telemetry_prod
+    access-groups: ['${AUTH_ADMIN_GROUP}']
+    access-expression: "#{toList('${ADMIN_USERS}', ',').contains(userId)}"
+    parameters:
+      definitions:
+        - id: git_branch
+          display-name: Git Branch
+          description: Main branch or develop branch
+          default-value: main
+      value-sets:
+        - values:
+            git_branch: [main, develop, '${DOCKER_TAG}']
+    display-name: "[ADMIN] Telemetry"
+    description: View telemetry data
+    container-cmd: ["R", "-e", "shiny::runApp()"]
+    container-image: "ghcr.io/bmc-d4e/h2e-telemetry:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+    container-network-connections: ["main-network"]
+    container-volumes:
+      - ${SHINYPROXY_TELEMETRY_DB_VOLUME}
+
+logging:
+  file:
+    name: ./logs/shinyproxy.log
+  level:
+    root: DEBUG
+
+server:
+  servlet.session.timeout: 0

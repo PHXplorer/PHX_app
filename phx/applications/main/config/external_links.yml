@@ -1,0 +1,3 @@
+default:
+  h2e_docs: "https://github.com/BMC-D4E/supporting-documentation/blob/main/H2e-docs.pdf"
+  h2e_license: "https://github.com/BMC-D4E/supporting-documentation/blob/main/h2e-license.pdf"
