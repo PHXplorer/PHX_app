@@ -37,7 +37,7 @@ fi
 # Static config
 compose_stacks=("shinyproxy" "database")
 applications_path="applications"
-image_name_prefix="ghcr.io/bmc-d4e/h2e"
+image_name_prefix="ghcr.io/phxplorer/phx_app"
 docker_images=("main" "validator" "telemetry")
 github_container_registry="ghcr.io"
 retries=10

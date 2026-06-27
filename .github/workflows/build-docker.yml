@@ -41,9 +41,9 @@ jobs:
         cache-from: type=gha,scope=h2e-main
         cache-to: type=gha,mode=max,scope=h2e-main
         tags: |
-          ghcr.io/bmc-d4e/h2e-main:${{ github.sha }}
-          ghcr.io/bmc-d4e/h2e-main:${{ env.MODIFIED_BRANCH_NAME }}
-          ghcr.io/bmc-d4e/h2e-main:latest
+          ghcr.io/phxplorer/phx_app-main:${{ github.sha }}
+          ghcr.io/phxplorer/phx_app-main:${{ env.MODIFIED_BRANCH_NAME }}
+          ghcr.io/phxplorer/phx_app-main:latest
 
     - name: Build and push Docker image for validator app
       uses: docker/build-push-action@v4
@@ -54,9 +54,9 @@ jobs:
         cache-from: type=gha,scope=h2e-validator
         cache-to: type=gha,mode=max,scope=h2e-validator
         tags: |
-          ghcr.io/bmc-d4e/h2e-validator:${{ github.sha }}
-          ghcr.io/bmc-d4e/h2e-validator:${{ env.MODIFIED_BRANCH_NAME }}
-          ghcr.io/bmc-d4e/h2e-validator:latest
+          ghcr.io/phxplorer/phx_app-validator:${{ github.sha }}
+          ghcr.io/phxplorer/phx_app-validator:${{ env.MODIFIED_BRANCH_NAME }}
+          ghcr.io/phxplorer/phx_app-validator:latest
 
     - name: Build and push Docker image for telemetry app
       uses: docker/build-push-action@v4
@@ -67,6 +67,6 @@ jobs:
         cache-from: type=gha,scope=h2e-telemetry
         cache-to: type=gha,mode=max,scope=h2e-telemetry
         tags: |
-          ghcr.io/bmc-d4e/h2e-telemetry:${{ github.sha }}
-          ghcr.io/bmc-d4e/h2e-telemetry:${{ env.MODIFIED_BRANCH_NAME }}
-          ghcr.io/bmc-d4e/h2e-telemetry:latest
+          ghcr.io/phxplorer/phx_app-telemetry:${{ github.sha }}
+          ghcr.io/phxplorer/phx_app-telemetry:${{ env.MODIFIED_BRANCH_NAME }}
+          ghcr.io/phxplorer/phx_app-telemetry:latest
