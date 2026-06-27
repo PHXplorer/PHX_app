@@ -6,7 +6,7 @@ options(
   # renv configuration
   repos = c(CRAN = "https://p3m.dev/cran/__linux__/jammy/latest"),
   pkgType = "binary",
-  renv.config.pak.enabled = TRUE
+  renv.config.pak.enabled = FALSE
 )
 
 source("renv/activate.R")
