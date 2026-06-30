@@ -167,7 +167,7 @@ jobs:
 
       - name: Archive test snapshots
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: testing_artifacts
           path: |
