@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /application
 COPY . .
 
-RUN ["R", "-e", "renv::restore()"]
+RUN ["Rscript","-e", "Sys.setenv(RENV_CONFIG_PAK_ENABLED='FALSE'); options(renv.config.pak.enabled=FALSE); print(Sys.getenv('RENV_CONFIG_PAK_ENABLED')); print(getOption('renv.config.pak.enabled')); renv::restore(prompt=FALSE)"]
 
 EXPOSE 3838
 

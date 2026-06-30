@@ -1,6 +1,6 @@
 FROM rocker/r-ver:4.4.0 as deps
 
-LABEL org.opencontainers.image.source https://github.com/BMC-D4E/h2e
+LABEL org.opencontainers.image.source https://github.com/phxplorer/phx_app
 
 ENV RENV_PATHS_ROOT /renv
 ENV RENV_PATHS_CACHE $RENV_PATHS_ROOT/cache

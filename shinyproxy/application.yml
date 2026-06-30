@@ -32,7 +32,7 @@ proxy:
     display-name: Population Health Explorer
     description: Production version (main branch), connected to the production database
     container-cmd: ["R", "-e", "shiny::runApp()"]
-    container-image: ghcr.io/bmc-d4e/h2e-main:main
+    container-image: ghcr.io/phxplorer/phx_app-main:main
     container-network-connections: ["main-network"]
     container-env-file: .env
     container-env:
@@ -73,7 +73,7 @@ proxy:
     display-name: "[ADMIN] Population Health Explorer"
     description: Ability to choose code branch, database environment, and database driver - to test new features, new data or their combinations.
     container-cmd: ["R", "-e", "shiny::runApp()"]
-    container-image: "ghcr.io/bmc-d4e/h2e-main:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+    container-image: "ghcr.io/phxplorer/phx_app-main:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
     container-network-connections: ["main-network"]
     container-env-file: .env
     container-env:
@@ -116,7 +116,7 @@ proxy:
     display-name: "[ADMIN] Data Validator"
     description: Run data checks
     container-cmd: ["R", "-e", "shiny::runApp()"]
-    container-image: "ghcr.io/bmc-d4e/h2e-validator:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+    container-image: "ghcr.io/phxplorer/phx_app-validator:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
     container-network-connections: ["main-network"]
     container-env-file: .env
     container-env:
@@ -141,7 +141,7 @@ proxy:
     display-name: "[ADMIN] Telemetry"
     description: View telemetry data
     container-cmd: ["R", "-e", "shiny::runApp()"]
-    container-image: "ghcr.io/bmc-d4e/h2e-telemetry:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
+    container-image: "ghcr.io/phxplorer/phx_app-telemetry:#{proxy.getRuntimeObject('SHINYPROXY_PARAMETERS').getValue('git_branch')}"
     container-network-connections: ["main-network"]
     container-volumes:
       - ${SHINYPROXY_TELEMETRY_DB_VOLUME}
