@@ -1,7 +1,7 @@
 default:
   files:
     demo_attributes: !expr file.path(getOption('box.path'), "tests/testthat/data/demo_attributes.csv")
-    health_dimensions: !expr file.path(getOption('box.path'), "tests/testthat/data/equity_dimensions.csv")
+    health_dimensions: !expr file.path(getOption('box.path'), "tests/testthat/data/health_dimensions.csv")
     feature_details: !expr file.path(getOption('box.path'), "tests/testthat/data/feature_details.csv")
     fips_data: !expr file.path(getOption('box.path'), "tests/testthat/data/fips_data.csv")
     zip5_data: !expr file.path(getOption('box.path'), "tests/testthat/data/zip5_data.csv")

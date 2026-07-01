@@ -115,7 +115,7 @@ describe("data loader active bindings", {
         distinct(feature_type) |>
         collect() |>
         pull()
-      expect_identical(feature_types, c("Equity Dimension", "Prevalence Equity Dimension"))
+      expect_identical(feature_types, c("Health Dimension", "Prevalence Health Dimension"))
     })
   })
 

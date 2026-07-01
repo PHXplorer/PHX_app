@@ -1,6 +1,6 @@
 box::use(
   testthat[...],
-  shiny[testServer]
+  shiny[testServer, reactive]
 )
 withr::local_dir(test_path("../../"))
 
@@ -14,11 +14,15 @@ test_that("global_filters_server returns the correct values", {
 
 
 test_that("global_filters_server plus buttons dont affect selected dimensions", {
-  testServer(global_filters$server, {
-    session$setInputs(
-      minus_button = 0,
-      plus_button = 3
-    )
-    expect_equal(length(unlist(selected_dims())), 0)
-  })
+  testServer(global_filters$server,
+             args = list(
+               current_tab = reactive("main")
+             ),
+             {
+               session$setInputs(
+                 minus_button = 0,
+                 plus_button = 3
+               )
+               expect_equal(length(unlist(selected_dims())), 0)
+             })
 })

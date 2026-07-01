@@ -15,7 +15,7 @@ test_that("env var is not set properly", {
     set_environment(),
     msg = "Must be a subset of {'production','development'}"
   )
-  local_envvar(list(ENVIRONMENT = ""))
+  local_envvar(list(ENVIRONMENT = "test"))
   expect_error(
     set_environment(),
     msg = "Must be a subset of {'production','development'}"

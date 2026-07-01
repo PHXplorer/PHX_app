@@ -1,225 +1,40 @@
-person_id,year,sex,race,ethnicity,age,age_group,fips,zip5,neighborhood,race_ethnicity
-1,2014,Female,White,Hispanic or Latino,38,27 to 39 years old,25025981000,02131,Roslindale,White - Hispanic or Latino
-1,2015,Female,White,Hispanic or Latino,39,27 to 39 years old,25025981000,02131,Roslindale,White - Hispanic or Latino
-1,2016,Female,White,Hispanic or Latino,40,40 to 55 years old,25025981000,02131,Roslindale,White - Hispanic or Latino
-1,2018,Female,White,Hispanic or Latino,42,40 to 55 years old,25025981000,02131,Roslindale,White - Hispanic or Latino
-1,2021,Female,White,Hispanic or Latino,45,40 to 55 years old,25025981000,02131,Roslindale,White - Hispanic or Latino
-1,2023,Female,White,Hispanic or Latino,47,40 to 55 years old,25025981000,02131,Roslindale,White - Hispanic or Latino
-2,2010,Male,White,Not Hispanic or Latino,82,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-2,2011,Male,White,Not Hispanic or Latino,83,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-3,2015,Male,Black or African American,Not Hispanic or Latino,25,19 to 26 years old,25025050300,02128,East Boston,Black or AA - Not Hispanic or Latino
-3,2018,Male,Black or African American,Not Hispanic or Latino,28,27 to 39 years old,25025050300,02128,East Boston,Black or AA - Not Hispanic or Latino
-3,2021,Male,Black or African American,Not Hispanic or Latino,31,27 to 39 years old,25025050300,02128,East Boston,Black or AA - Not Hispanic or Latino
-3,2023,Male,Black or African American,Not Hispanic or Latino,33,27 to 39 years old,25025050300,02128,East Boston,Black or AA - Not Hispanic or Latino
-4,2013,Male,White,Not Hispanic or Latino,40,40 to 55 years old,25025010404,02115,Fenway,White - Not Hispanic or Latino
-4,2015,Male,White,Not Hispanic or Latino,42,40 to 55 years old,25025010404,02115,Fenway,White - Not Hispanic or Latino
-4,2017,Male,White,Not Hispanic or Latino,44,40 to 55 years old,25025010404,02115,Fenway,White - Not Hispanic or Latino
-4,2019,Male,White,Not Hispanic or Latino,46,40 to 55 years old,25025010404,02115,Fenway,White - Not Hispanic or Latino
-4,2021,Male,White,Not Hispanic or Latino,48,40 to 55 years old,25025010404,02115,Fenway,White - Not Hispanic or Latino
-5,2010,Male,White,Not Hispanic or Latino,52,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2012,Male,White,Not Hispanic or Latino,54,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2013,Male,White,Not Hispanic or Latino,55,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2014,Male,White,Not Hispanic or Latino,56,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2015,Male,White,Not Hispanic or Latino,57,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2016,Male,White,Not Hispanic or Latino,58,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2017,Male,White,Not Hispanic or Latino,59,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2018,Male,White,Not Hispanic or Latino,60,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2019,Male,White,Not Hispanic or Latino,61,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2020,Male,White,Not Hispanic or Latino,62,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2021,Male,White,Not Hispanic or Latino,63,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-5,2022,Male,White,Not Hispanic or Latino,64,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-6,2013,Male,White,Not Hispanic or Latino,19,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-6,2016,Male,White,Not Hispanic or Latino,22,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-6,2017,Male,White,Not Hispanic or Latino,23,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-6,2019,Male,White,Not Hispanic or Latino,25,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-6,2022,Male,White,Not Hispanic or Latino,28,27 to 39 years old,NA,NA,NA,White - Not Hispanic or Latino
-7,2014,Female,White,Not Hispanic or Latino,42,40 to 55 years old,25025092300,02124,Dorchester 22-24,White - Not Hispanic or Latino
-7,2016,Female,White,Not Hispanic or Latino,44,40 to 55 years old,25025092300,02124,Dorchester 22-24,White - Not Hispanic or Latino
-7,2018,Female,White,Not Hispanic or Latino,46,40 to 55 years old,25025092300,02124,Dorchester 22-24,White - Not Hispanic or Latino
-7,2020,Female,White,Not Hispanic or Latino,48,40 to 55 years old,25025092300,02124,Dorchester 22-24,White - Not Hispanic or Latino
-7,2022,Female,White,Not Hispanic or Latino,50,40 to 55 years old,25025092300,02124,Dorchester 22-24,White - Not Hispanic or Latino
-8,2013,Male,Asian,Not Hispanic or Latino,88,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2014,Male,Asian,Not Hispanic or Latino,89,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2015,Male,Asian,Not Hispanic or Latino,90,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2016,Male,Asian,Not Hispanic or Latino,91,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2017,Male,Asian,Not Hispanic or Latino,92,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2018,Male,Asian,Not Hispanic or Latino,93,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2019,Male,Asian,Not Hispanic or Latino,94,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2020,Male,Asian,Not Hispanic or Latino,95,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2021,Male,Asian,Not Hispanic or Latino,96,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-8,2022,Male,Asian,Not Hispanic or Latino,97,86+ years old,NA,NA,NA,Asian - Not Hispanic or Latino
-9,2013,Female,White,Not Hispanic or Latino,46,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2014,Female,White,Not Hispanic or Latino,47,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2015,Female,White,Not Hispanic or Latino,48,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2017,Female,White,Not Hispanic or Latino,50,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2018,Female,White,Not Hispanic or Latino,51,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2019,Female,White,Not Hispanic or Latino,52,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2020,Female,White,Not Hispanic or Latino,53,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2021,Female,White,Not Hispanic or Latino,54,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-9,2022,Female,White,Not Hispanic or Latino,55,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2013,Male,White,Not Hispanic or Latino,10,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2014,Male,White,Not Hispanic or Latino,11,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2015,Male,White,Not Hispanic or Latino,12,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2016,Male,White,Not Hispanic or Latino,13,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2017,Male,White,Not Hispanic or Latino,14,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2018,Male,White,Not Hispanic or Latino,15,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2019,Male,White,Not Hispanic or Latino,16,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2020,Male,White,Not Hispanic or Latino,17,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2021,Male,White,Not Hispanic or Latino,18,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-10,2022,Male,White,Not Hispanic or Latino,19,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-11,2014,Female,White,Hispanic or Latino,34,27 to 39 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2015,Female,White,Hispanic or Latino,35,27 to 39 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2016,Female,White,Hispanic or Latino,36,27 to 39 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2017,Female,White,Hispanic or Latino,37,27 to 39 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2018,Female,White,Hispanic or Latino,38,27 to 39 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2019,Female,White,Hispanic or Latino,39,27 to 39 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2020,Female,White,Hispanic or Latino,40,40 to 55 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2021,Female,White,Hispanic or Latino,41,40 to 55 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2022,Female,White,Hispanic or Latino,42,40 to 55 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-11,2023,Female,White,Hispanic or Latino,43,40 to 55 years old,25025040801,02129,Charlestown,White - Hispanic or Latino
-13,2010,Male,White,Not Hispanic or Latino,69,56 to 69 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2011,Male,White,Not Hispanic or Latino,70,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2012,Male,White,Not Hispanic or Latino,71,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2013,Male,White,Not Hispanic or Latino,72,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2014,Male,White,Not Hispanic or Latino,73,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2015,Male,White,Not Hispanic or Latino,74,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2016,Male,White,Not Hispanic or Latino,75,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2017,Male,White,Not Hispanic or Latino,76,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2018,Male,White,Not Hispanic or Latino,77,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2019,Male,White,Not Hispanic or Latino,78,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2020,Male,White,Not Hispanic or Latino,79,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2021,Male,White,Not Hispanic or Latino,80,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-13,2022,Male,White,Not Hispanic or Latino,81,70 to 85 years old,25025081900,02121,Dorchester 21-25,White - Not Hispanic or Latino
-14,2015,Female,White,Not Hispanic or Latino,22,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-14,2018,Female,White,Not Hispanic or Latino,25,19 to 26 years old,NA,NA,NA,White - Not Hispanic or Latino
-14,2021,Female,White,Not Hispanic or Latino,28,27 to 39 years old,NA,NA,NA,White - Not Hispanic or Latino
-15,2013,Female,White,Not Hispanic or Latino,3,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2014,Female,White,Not Hispanic or Latino,4,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2015,Female,White,Not Hispanic or Latino,5,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2016,Female,White,Not Hispanic or Latino,6,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2017,Female,White,Not Hispanic or Latino,7,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2018,Female,White,Not Hispanic or Latino,8,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2019,Female,White,Not Hispanic or Latino,9,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2020,Female,White,Not Hispanic or Latino,10,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2021,Female,White,Not Hispanic or Latino,11,1 to 11 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-15,2022,Female,White,Not Hispanic or Latino,12,12 to 18 years old,25023510800,02301,NA,White - Not Hispanic or Latino
-16,2013,Female,Black or African American,Hispanic or Latino,18,12 to 18 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2014,Female,Black or African American,Hispanic or Latino,19,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2015,Female,Black or African American,Hispanic or Latino,20,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2016,Female,Black or African American,Hispanic or Latino,21,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2017,Female,Black or African American,Hispanic or Latino,22,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2018,Female,Black or African American,Hispanic or Latino,23,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2019,Female,Black or African American,Hispanic or Latino,24,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2020,Female,Black or African American,Hispanic or Latino,25,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2021,Female,Black or African American,Hispanic or Latino,26,19 to 26 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-16,2022,Female,Black or African American,Hispanic or Latino,27,27 to 39 years old,NA,NA,NA,Black or AA - Hispanic or Latino
-19,2020,Female,White,Hispanic or Latino,2,1 to 11 years old,NA,NA,NA,White - Hispanic or Latino
-19,2021,Female,White,Hispanic or Latino,3,1 to 11 years old,NA,NA,NA,White - Hispanic or Latino
-19,2022,Female,White,Hispanic or Latino,4,1 to 11 years old,NA,NA,NA,White - Hispanic or Latino
-20,2011,Male,No matching concept,Not Hispanic or Latino,62,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2012,Male,No matching concept,Not Hispanic or Latino,63,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2013,Male,No matching concept,Not Hispanic or Latino,64,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2014,Male,No matching concept,Not Hispanic or Latino,65,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2016,Male,No matching concept,Not Hispanic or Latino,67,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2017,Male,No matching concept,Not Hispanic or Latino,68,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2018,Male,No matching concept,Not Hispanic or Latino,69,56 to 69 years old,25001014002,02559,NA,Unknown
-20,2019,Male,No matching concept,Not Hispanic or Latino,70,70 to 85 years old,25001014002,02559,NA,Unknown
-20,2020,Male,No matching concept,Not Hispanic or Latino,71,70 to 85 years old,25001014002,02559,NA,Unknown
-20,2021,Male,No matching concept,Not Hispanic or Latino,72,70 to 85 years old,25001014002,02559,NA,Unknown
-20,2022,Male,No matching concept,Not Hispanic or Latino,73,70 to 85 years old,25001014002,02559,NA,Unknown
-20,2023,Male,No matching concept,Not Hispanic or Latino,74,70 to 85 years old,25001014002,02559,NA,Unknown
-21,2013,Female,White,Not Hispanic or Latino,50,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2014,Female,White,Not Hispanic or Latino,51,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2015,Female,White,Not Hispanic or Latino,52,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2016,Female,White,Not Hispanic or Latino,53,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2017,Female,White,Not Hispanic or Latino,54,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2018,Female,White,Not Hispanic or Latino,55,40 to 55 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2019,Female,White,Not Hispanic or Latino,56,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2020,Female,White,Not Hispanic or Latino,57,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2021,Female,White,Not Hispanic or Latino,58,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-21,2022,Female,White,Not Hispanic or Latino,59,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-22,2011,Male,No matching concept,Hispanic or Latino,67,56 to 69 years old,NA,NA,NA,Hispanic or Latino Only
-22,2012,Male,No matching concept,Hispanic or Latino,68,56 to 69 years old,NA,NA,NA,Hispanic or Latino Only
-22,2013,Male,No matching concept,Hispanic or Latino,69,56 to 69 years old,NA,NA,NA,Hispanic or Latino Only
-22,2014,Male,No matching concept,Hispanic or Latino,70,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2015,Male,No matching concept,Hispanic or Latino,71,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2016,Male,No matching concept,Hispanic or Latino,72,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2017,Male,No matching concept,Hispanic or Latino,73,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2018,Male,No matching concept,Hispanic or Latino,74,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2019,Male,No matching concept,Hispanic or Latino,75,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2020,Male,No matching concept,Hispanic or Latino,76,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2021,Male,No matching concept,Hispanic or Latino,77,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-22,2022,Male,No matching concept,Hispanic or Latino,78,70 to 85 years old,NA,NA,NA,Hispanic or Latino Only
-23,2013,Male,Black or African American,Not Hispanic or Latino,14,12 to 18 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2014,Male,Black or African American,Not Hispanic or Latino,15,12 to 18 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2015,Male,Black or African American,Not Hispanic or Latino,16,12 to 18 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2016,Male,Black or African American,Not Hispanic or Latino,17,12 to 18 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2017,Male,Black or African American,Not Hispanic or Latino,18,12 to 18 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2018,Male,Black or African American,Not Hispanic or Latino,19,19 to 26 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2019,Male,Black or African American,Not Hispanic or Latino,20,19 to 26 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2022,Male,Black or African American,Not Hispanic or Latino,23,19 to 26 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-23,2023,Male,Black or African American,Not Hispanic or Latino,24,19 to 26 years old,25027709400,01453,NA,Black or AA - Not Hispanic or Latino
-24,2010,Female,Asian,Not Hispanic or Latino,77,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2011,Female,Asian,Not Hispanic or Latino,78,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2012,Female,Asian,Not Hispanic or Latino,79,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2013,Female,Asian,Not Hispanic or Latino,80,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2014,Female,Asian,Not Hispanic or Latino,81,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2015,Female,Asian,Not Hispanic or Latino,82,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2016,Female,Asian,Not Hispanic or Latino,83,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2017,Female,Asian,Not Hispanic or Latino,84,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2018,Female,Asian,Not Hispanic or Latino,85,70 to 85 years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2019,Female,Asian,Not Hispanic or Latino,86,86+ years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2020,Female,Asian,Not Hispanic or Latino,87,86+ years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2021,Female,Asian,Not Hispanic or Latino,88,86+ years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-24,2022,Female,Asian,Not Hispanic or Latino,89,86+ years old,25025092101,02122,Dorchester 22-24,Asian - Not Hispanic or Latino
-25,2010,Male,White,Hispanic or Latino,50,40 to 55 years old,NA,NA,NA,White - Hispanic or Latino
-25,2011,Male,White,Hispanic or Latino,51,40 to 55 years old,NA,NA,NA,White - Hispanic or Latino
-25,2012,Male,White,Hispanic or Latino,52,40 to 55 years old,NA,NA,NA,White - Hispanic or Latino
-25,2013,Male,White,Hispanic or Latino,53,40 to 55 years old,NA,NA,NA,White - Hispanic or Latino
-25,2014,Male,White,Hispanic or Latino,54,40 to 55 years old,NA,NA,NA,White - Hispanic or Latino
-25,2015,Male,White,Hispanic or Latino,55,40 to 55 years old,NA,NA,NA,White - Hispanic or Latino
-25,2016,Male,White,Hispanic or Latino,56,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-25,2017,Male,White,Hispanic or Latino,57,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-25,2018,Male,White,Hispanic or Latino,58,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-25,2019,Male,White,Hispanic or Latino,59,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-25,2020,Male,White,Hispanic or Latino,60,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-25,2021,Male,White,Hispanic or Latino,61,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-25,2022,Male,White,Hispanic or Latino,62,56 to 69 years old,NA,NA,NA,White - Hispanic or Latino
-26,2015,Female,White,Not Hispanic or Latino,25,19 to 26 years old,25025020101,02114,Central Boston,White - Not Hispanic or Latino
-26,2018,Female,White,Not Hispanic or Latino,28,27 to 39 years old,25025020101,02114,Central Boston,White - Not Hispanic or Latino
-26,2021,Female,White,Not Hispanic or Latino,31,27 to 39 years old,25025020101,02114,Central Boston,White - Not Hispanic or Latino
-26,2022,Female,White,Not Hispanic or Latino,32,27 to 39 years old,25025020101,02114,Central Boston,White - Not Hispanic or Latino
-27,2014,Female,White,Hispanic or Latino,6,1 to 11 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2015,Female,White,Hispanic or Latino,7,1 to 11 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2016,Female,White,Hispanic or Latino,8,1 to 11 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2017,Female,White,Hispanic or Latino,9,1 to 11 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2018,Female,White,Hispanic or Latino,10,1 to 11 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2019,Female,White,Hispanic or Latino,11,1 to 11 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2020,Female,White,Hispanic or Latino,12,12 to 18 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2021,Female,White,Hispanic or Latino,13,12 to 18 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-27,2022,Female,White,Hispanic or Latino,14,12 to 18 years old,25025060603,02210,South Boston,White - Hispanic or Latino
-28,2010,Male,White,Not Hispanic or Latino,66,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2012,Male,White,Not Hispanic or Latino,68,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2013,Male,White,Not Hispanic or Latino,69,56 to 69 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2014,Male,White,Not Hispanic or Latino,70,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2015,Male,White,Not Hispanic or Latino,71,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2016,Male,White,Not Hispanic or Latino,72,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2017,Male,White,Not Hispanic or Latino,73,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2018,Male,White,Not Hispanic or Latino,74,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2019,Male,White,Not Hispanic or Latino,75,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2020,Male,White,Not Hispanic or Latino,76,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2021,Male,White,Not Hispanic or Latino,77,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-28,2022,Male,White,Not Hispanic or Latino,78,70 to 85 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2013,Female,White,Not Hispanic or Latino,7,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2014,Female,White,Not Hispanic or Latino,8,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2015,Female,White,Not Hispanic or Latino,9,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2016,Female,White,Not Hispanic or Latino,10,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2017,Female,White,Not Hispanic or Latino,11,1 to 11 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2018,Female,White,Not Hispanic or Latino,12,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2019,Female,White,Not Hispanic or Latino,13,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2020,Female,White,Not Hispanic or Latino,14,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2021,Female,White,Not Hispanic or Latino,15,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-29,2022,Female,White,Not Hispanic or Latino,16,12 to 18 years old,NA,NA,NA,White - Not Hispanic or Latino
-30,2016,Female,White,Hispanic or Latino,29,27 to 39 years old,25023530801,02360,NA,White - Hispanic or Latino
-30,2019,Female,White,Hispanic or Latino,32,27 to 39 years old,25023530801,02360,NA,White - Hispanic or Latino
-30,2022,Female,White,Hispanic or Latino,35,27 to 39 years old,25023530801,02360,NA,White - Hispanic or Latino
+person_id,year,sex,race,ethnicity,age,age_group,fips,zip5,neighborhood
+2,2015,Male,White,Hispanic or Latino,27,27 to 39 years old,25025051200,2128,East Boston
+2,2016,Male,White,Hispanic or Latino,28,27 to 39 years old,25025051200,2128,East Boston
+2,2017,Male,White,Hispanic or Latino,29,27 to 39 years old,25025051200,2128,East Boston
+2,2018,Male,White,Hispanic or Latino,30,27 to 39 years old,25025051200,2128,East Boston
+2,2019,Male,White,Hispanic or Latino,31,27 to 39 years old,25025051200,2128,East Boston
+5,2021,Male,Unknown,Unknown,23,18 to 26 years old,25025061201,2127,South Boston
+5,2022,Male,Unknown,Unknown,24,18 to 26 years old,25025061201,2127,South Boston
+5,2023,Male,Unknown,Unknown,25,18 to 26 years old,25025061201,2127,South Boston
+5,2024,Male,Unknown,Unknown,26,18 to 26 years old,25025061201,2127,South Boston
+7,2023,Male,Asian,Not Hispanic or Latino,35,27 to 39 years old,25025000703,2134,Allston/Brighton
+8,2024,Male,White,Not Hispanic or Latino,0,< 1 year old,NA,2118,South End/Chinatown
+11,2015,Female,Black,Not Hispanic or Latino,25,18 to 26 years old,25025101001,2126,Mattapan
+11,2016,Female,Black,Not Hispanic or Latino,26,18 to 26 years old,25025101001,2126,Mattapan
+11,2017,Female,Black,Not Hispanic or Latino,27,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2018,Female,Black,Not Hispanic or Latino,28,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2019,Female,Black,Not Hispanic or Latino,29,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2020,Female,Black,Not Hispanic or Latino,30,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2021,Female,Black,Not Hispanic or Latino,31,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2022,Female,Black,Not Hispanic or Latino,32,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2023,Female,Black,Not Hispanic or Latino,33,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2024,Female,Black,Not Hispanic or Latino,34,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2025,Female,Black,Not Hispanic or Latino,35,27 to 39 years old,25025100200,2124,Dorchester 22-24
+11,2026,Female,Black,Not Hispanic or Latino,36,27 to 39 years old,25025100200,2124,Dorchester 22-24
+12,2015,Male,Unknown,Hispanic or Latino,54,40 to 55 years old,25025120301,2130,Jamaica Plain
+12,2016,Male,Unknown,Hispanic or Latino,55,40 to 55 years old,25025120301,2130,Jamaica Plain
+12,2017,Male,Unknown,Hispanic or Latino,56,56 to 69 years old,25025120301,2130,Jamaica Plain
+12,2018,Male,Unknown,Hispanic or Latino,57,56 to 69 years old,25025120301,2130,Jamaica Plain
+16,2015,Female,Unknown,Hispanic or Latino,2,1 to 11 years old,25025051000,2128,East Boston
+21,2023,Female,Black,Not Hispanic or Latino,32,27 to 39 years old,25025091800,2125,Dorchester 21-25
+21,2024,Female,Black,Not Hispanic or Latino,33,27 to 39 years old,25025091800,2125,Dorchester 21-25
+21,2025,Female,Black,Not Hispanic or Latino,34,27 to 39 years old,25025091800,2125,Dorchester 21-25
+21,2026,Female,Black,Not Hispanic or Latino,35,27 to 39 years old,25025091800,2125,Dorchester 21-25
+22,2015,Female,Unknown,Hispanic or Latino,95,86+ years old,25025091300,2125,Dorchester 21-25
+22,2016,Female,Unknown,Hispanic or Latino,96,86+ years old,25025091300,2125,Dorchester 21-25
+22,2017,Female,Unknown,Hispanic or Latino,97,86+ years old,25025091300,2125,Dorchester 21-25
+25,2016,Female,Black,Hispanic or Latino,43,40 to 55 years old,25025080300,2119,Roxbury
+26,2017,Female,Black,Not Hispanic or Latino,78,70 to 85 years old,25025100300,2124,Dorchester 22-24
+26,2018,Female,Black,Not Hispanic or Latino,79,70 to 85 years old,25025100300,2124,Dorchester 22-24
+26,2019,Female,Black,Not Hispanic or Latino,80,70 to 85 years old,25025100300,2124,Dorchester 22-24

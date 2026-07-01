@@ -26,7 +26,7 @@ env:
 jobs:
   main:
     name: Run linters and tests
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     defaults:
       run:
         working-directory: ./applications/main
@@ -167,7 +167,7 @@ jobs:
 
       - name: Archive test snapshots
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: testing_artifacts
           path: |

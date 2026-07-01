@@ -12,7 +12,7 @@ box::use(
 )
 
 equity_with_filters <- data_loader$equity_dimensions_tbl |>
-  dplyr::filter(health_dimension == "BMI")
+  dplyr::filter(health_dimension == "BMI < 30")
 
 describe("get_feature_importance", {
   data <- subset(datasets::mtcars, select = -am)
