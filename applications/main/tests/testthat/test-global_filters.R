@@ -19,10 +19,10 @@ test_that("global_filters_server plus buttons dont affect selected dimensions", 
                current_tab = reactive("main")
              ),
              {
-    session$setInputs(
-      minus_button = 0,
-      plus_button = 3
-    )
-    expect_equal(length(unlist(selected_dims())), 0)
-  })
+               session$setInputs(
+                 minus_button = 0,
+                 plus_button = 3
+               )
+               expect_equal(length(unlist(selected_dims())), 0)
+             })
 })
