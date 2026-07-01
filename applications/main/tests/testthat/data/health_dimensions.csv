@@ -1,0 +1,757 @@
+person_id,year,measurement_date,health_dimension,value,value_as_number,status,status_as_string,featureid
+1,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+1,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+1,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+1,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2020,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+1,2020,2020-05-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+1,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+1,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+1,2021,2021-10-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+1,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+1,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+1,2022,2022-04-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+1,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+1,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+1,2023,2023-04-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+1,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+1,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2024,2023-04-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+1,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+1,2025,2023-04-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+2,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2015,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+2,2015,2015-11-01,BMI < 30,BMI < 30,28.8,1,Controlled,CVR_01
+2,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2016,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+2,2016,2016-08-01,BMI < 30,BMI >= 30,30.48,0,Not Controlled,CVR_01
+2,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+2,2017,2017-01-01,BMI < 30,BMI >= 30,31.73,0,Not Controlled,CVR_01
+2,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+2,2024,2024-10-01,BMI < 30,BMI >= 30,31.77,0,Not Controlled,CVR_01
+2,2024,2024-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+2,2024,2024-09-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+2,2024,2024-09-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+2,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+2,2025,2025-04-01,BMI < 30,BMI >= 30,32.06,0,Not Controlled,CVR_01
+2,2025,2025-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+2,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+2,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+2,2026,2025-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+3,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+3,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+3,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+3,2025,2025-11-01,BMI < 30,BMI < 30,24.75,1,Controlled,CVR_01
+3,2025,2025-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+3,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+3,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+3,2026,2025-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+4,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+4,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+4,2015,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+4,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+4,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+4,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+5,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+5,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+5,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+5,2021,2021-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+5,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+5,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+5,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+5,2022,2022-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+5,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+5,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+5,2023,2022-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+5,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+5,2024,2022-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+6,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+6,2017,2017-11-01,BMI < 30,BMI < 30,27.46,1,Controlled,CVR_01
+6,2017,2017-05-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2017,NA,Smoking status,Current smoker,NA,0,Not Controlled,PS_01
+6,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2018,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+6,2018,2018-12-01,BMI < 30,BMI < 30,27.36,1,Controlled,CVR_01
+6,2018,2018-05-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2018,NA,Smoking status,Current smoker,NA,0,Not Controlled,PS_01
+6,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2019,2019-04-01,BMI < 30,BMI < 30,26.83,1,Controlled,CVR_01
+6,2019,2018-05-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2019,NA,Smoking status,Current smoker,NA,0,Not Controlled,PS_01
+6,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2020,2018-05-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2020,2018-05-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+6,2021,NA,Smoking status,Current smoker,NA,0,Not Controlled,PS_01
+6,2022,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+6,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+6,2023,2023-08-01,BMI < 30,BMI < 30,28.92,1,Controlled,CVR_01
+6,2023,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+6,2023,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+6,2023,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+6,2023,2023-08-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2023,2023-08-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+6,2023,2023-08-01,Food Security,Insecure,NA,0,Not Controlled,SDOH_01
+6,2023,2023-08-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+6,2023,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+6,2023,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+6,2023,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+6,2023,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+6,2023,NA,Substance Use Disorder,Substance Use Disorder,NA,1,NA,BH_09
+6,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2024,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+6,2024,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+6,2024,2023-08-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2024,2023-08-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+6,2024,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+6,2024,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+6,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+6,2025,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+6,2025,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+6,2025,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+6,2025,2025-12-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2025,2025-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+6,2025,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+6,2025,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+6,2025,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+6,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+6,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+6,2026,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+6,2026,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+6,2026,2025-12-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+6,2026,2025-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+6,2026,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+6,2026,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+7,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+7,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+7,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+7,2023,2023-10-01,COVID Vaccination,1+ vaccinations in year,1,1,Controlled,COVID_01
+7,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+7,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+7,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+7,2024,2024-09-01,BMI < 30,BMI < 30,21.24,1,Controlled,CVR_01
+7,2024,2024-09-01,COVID Vaccination,No vaccinations in year,1,0,Not Controlled,COVID_01
+7,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+7,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+7,2025,2024-09-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+7,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+7,2026,2024-09-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+8,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+8,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+8,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+9,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+9,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+9,2020,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+9,2020,2020-08-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+9,2020,2020-08-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+9,2020,2020-08-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+9,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+9,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+9,2021,2020-08-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+9,2021,2020-08-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+9,2021,2020-08-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+9,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+9,2022,2020-08-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+9,2022,2020-08-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+9,2022,2020-08-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+10,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+10,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+10,2016,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+10,2016,2016-06-01,BMI < 30,BMI < 30,26.18,1,Controlled,CVR_01
+10,2016,NA,Hearing Disability,Hearing Disability,NA,1,Yes,DIS_02
+10,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+10,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+10,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+10,2017,NA,Hearing Disability,Hearing Disability,NA,1,Yes,DIS_02
+10,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+10,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+10,2018,NA,Hearing Disability,Hearing Disability,NA,1,Yes,DIS_02
+10,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+10,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+10,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+10,2019,2019-06-01,BMI < 30,BMI < 30,26.17,1,Controlled,CVR_01
+10,2019,NA,Hearing Disability,Hearing Disability,NA,1,Yes,DIS_02
+10,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+10,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+10,2020,2019-10-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+10,2020,NA,Hearing Disability,Hearing Disability,NA,1,Yes,DIS_02
+10,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+10,2021,2019-10-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+10,2021,NA,Hearing Disability,Hearing Disability,NA,1,Yes,DIS_02
+11,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2015,2015-11-01,BMI < 30,BMI >= 30,32.95,0,Not Controlled,CVR_01
+11,2015,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2016,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2016,2016-12-01,BMI < 30,BMI >= 30,32.65,0,Not Controlled,CVR_01
+11,2016,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2017,2017-12-01,BMI < 30,BMI >= 30,31.62,0,Not Controlled,CVR_01
+11,2017,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2018,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2018,2018-11-01,BMI < 30,BMI >= 30,35.68,0,Not Controlled,CVR_01
+11,2018,2018-02-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2018,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2019,2019-11-01,BMI < 30,BMI >= 30,34.12,0,Not Controlled,CVR_01
+11,2019,2019-11-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+11,2019,2019-11-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2019,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2020,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2020,2020-06-01,BMI < 30,BMI >= 30,30.14,0,Not Controlled,CVR_01
+11,2020,2020-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+11,2020,2020-06-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+11,2020,2020-06-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2020,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2021,2021-12-01,BMI < 30,BMI >= 30,32.28,0,Not Controlled,CVR_01
+11,2021,2021-12-01,COVID Vaccination,1+ vaccinations in year,2,1,Controlled,COVID_01
+11,2021,2021-12-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2021,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2022,2022-12-01,BMI < 30,BMI >= 30,36.34,0,Not Controlled,CVR_01
+11,2022,2022-07-01,COVID Vaccination,1+ vaccinations in year,3,1,Controlled,COVID_01
+11,2022,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2023,2023-10-01,Blood Pressure Control,Controlled,108/73,1,Controlled,CVR_03
+11,2023,2023-10-01,BMI < 30,BMI >= 30,34.11,0,Not Controlled,CVR_01
+11,2023,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+11,2023,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+11,2023,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+11,2023,2023-10-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+11,2023,2023-10-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+11,2023,2023-10-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2023,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+11,2023,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+11,2023,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+11,2023,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+11,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2024,2024-09-01,Blood Pressure Control,Controlled,111/77,1,Controlled,CVR_03
+11,2024,2024-09-01,BMI < 30,BMI >= 30,34.49,0,Not Controlled,CVR_01
+11,2024,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+11,2024,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+11,2024,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+11,2024,2024-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+11,2024,2024-05-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+11,2024,2024-05-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2024,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+11,2024,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+11,2024,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+11,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2025,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+11,2025,2025-12-01,BMI < 30,BMI >= 30,37.89,0,Not Controlled,CVR_01
+11,2025,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+11,2025,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+11,2025,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+11,2025,2025-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+11,2025,2025-12-01,Food Security,Insecure,NA,0,Not Controlled,SDOH_01
+11,2025,2025-12-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+11,2025,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+11,2025,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+11,2025,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+11,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+11,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+11,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+11,2026,2026-03-01,Blood Pressure Control,Controlled,131/84,1,Controlled,CVR_03
+11,2026,2026-03-01,BMI < 30,BMI >= 30,38.18,0,Not Controlled,CVR_01
+11,2026,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+11,2026,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+11,2026,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+11,2026,2026-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+11,2026,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+11,2026,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+11,2026,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2015,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2015,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2015,2015-10-01,Blood Pressure Control,Not Controlled,133/94,0,Not Controlled,CVR_03
+12,2015,2015-10-01,BMI < 30,BMI >= 30,30.12,0,Not Controlled,CVR_01
+12,2015,2015-10-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2015,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2015,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2015,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2016,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2016,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2016,2016-11-01,Blood Pressure Control,Controlled,132/88,1,Controlled,CVR_03
+12,2016,2016-11-01,BMI < 30,BMI < 30,29.94,1,Controlled,CVR_01
+12,2016,2016-11-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2016,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2016,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2016,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2017,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2017,2017-11-01,Blood Pressure Control,Not Controlled,143/99,0,Not Controlled,CVR_03
+12,2017,2017-11-01,BMI < 30,BMI >= 30,31.64,0,Not Controlled,CVR_01
+12,2017,2017-11-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2017,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2017,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2017,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2018,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2018,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2018,2018-11-01,Blood Pressure Control,Not Controlled,133/91,0,Not Controlled,CVR_03
+12,2018,2018-11-01,BMI < 30,BMI >= 30,32.39,0,Not Controlled,CVR_01
+12,2018,2018-12-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2018,2018-01-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2018,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2018,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2018,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2019,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2019,2019-08-01,Blood Pressure Control,Not Controlled,135/90,0,Not Controlled,CVR_03
+12,2019,2019-08-01,BMI < 30,BMI >= 30,32.39,0,Not Controlled,CVR_01
+12,2019,2019-08-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2019,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2019,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2019,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2020,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2020,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2020,2020-08-01,Blood Pressure Control,Not Controlled,168/110,0,Not Controlled,CVR_03
+12,2020,2020-08-01,BMI < 30,BMI >= 30,33.12,0,Not Controlled,CVR_01
+12,2020,2020-12-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2020,2020-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+12,2020,2020-08-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+12,2020,2020-08-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2020,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2020,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2020,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2021,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2021,2021-01-01,Blood Pressure Control,Not Measured,NA,-1,Not Measured,CVR_03
+12,2021,2021-12-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2021,2021-12-01,COVID Vaccination,1+ vaccinations in year,3,1,Controlled,COVID_01
+12,2021,2021-03-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2021,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2021,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2021,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2022,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2022,2022-12-01,Blood Pressure Control,Controlled,136/82,1,Controlled,CVR_03
+12,2022,2022-12-01,BMI < 30,BMI >= 30,31.8,0,Not Controlled,CVR_01
+12,2022,2022-12-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2022,2022-12-01,COVID Vaccination,1+ vaccinations in year,1,1,Controlled,COVID_01
+12,2022,2022-12-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+12,2022,2022-12-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2022,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2022,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2022,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2023,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2023,2023-11-01,Blood Pressure Control,Not Controlled,153/90,0,Not Controlled,CVR_03
+12,2023,2023-11-01,BMI < 30,BMI >= 30,32.16,0,Not Controlled,CVR_01
+12,2023,2023-12-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+12,2023,2023-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+12,2023,2023-10-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+12,2023,2023-10-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2023,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2023,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2023,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2024,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2024,2024-10-01,Blood Pressure Control,Controlled,133/82,1,Controlled,CVR_03
+12,2024,2024-10-01,BMI < 30,BMI >= 30,32.16,0,Not Controlled,CVR_01
+12,2024,2024-11-01,Colon Cancer Screening,Screened,NA,1,Controlled,PS_02
+12,2024,2024-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+12,2024,2024-10-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+12,2024,2024-10-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2024,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2024,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2024,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2025,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2025,2025-07-01,Blood Pressure Control,Controlled,127/89,1,Controlled,CVR_03
+12,2025,2025-07-01,BMI < 30,BMI >= 30,32.88,0,Not Controlled,CVR_01
+12,2025,2025-08-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+12,2025,2025-08-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+12,2025,2025-04-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+12,2025,2025-04-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+12,2025,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2025,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+12,2025,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+12,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+12,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+12,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+12,2026,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+12,2026,2026-01-01,Blood Pressure Control,Controlled,118/77,1,Controlled,CVR_03
+12,2026,2026-01-01,BMI < 30,BMI >= 30,33.97,0,Not Controlled,CVR_01
+12,2026,2026-01-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+12,2026,2026-01-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+12,2026,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+12,2026,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+13,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+13,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+13,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+13,2025,2025-06-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+13,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+13,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+13,2026,2025-06-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+14,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+14,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+14,2015,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+14,2015,2015-07-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+14,2015,2015-07-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+14,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+14,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+14,2016,2015-07-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+14,2016,2015-07-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+14,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+14,2017,2015-07-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+14,2017,2015-07-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+15,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+15,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+15,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+15,2022,2022-01-01,COVID Vaccination,1+ vaccinations in year,1,1,Controlled,COVID_01
+15,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+15,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+15,2023,2022-01-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+15,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+15,2024,2022-01-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+16,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2015,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2016,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2017,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2017,2017-06-01,BMI < 30,BMI >= 30,37.17,0,Not Controlled,CVR_01
+17,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2018,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2018,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2018,2018-09-01,BMI < 30,BMI >= 30,38.37,0,Not Controlled,CVR_01
+17,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2019,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2019,2019-12-01,BMI < 30,BMI >= 30,35.57,0,Not Controlled,CVR_01
+17,2019,2019-09-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+17,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2020,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2020,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2020,2020-06-01,BMI < 30,BMI >= 30,35.07,0,Not Controlled,CVR_01
+17,2020,2020-09-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+17,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2021,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2021,2021-12-01,COVID Vaccination,1+ vaccinations in year,2,1,Controlled,COVID_01
+17,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2022,NA,Anxiety or Depression,Anxiety/Depression Dx,NA,1,Yes,BH_01
+17,2022,2022-03-01,BMI < 30,BMI >= 30,30.82,0,Not Controlled,CVR_01
+17,2022,2022-03-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+17,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2023,2023-12-01,BMI < 30,BMI >= 30,34.19,0,Not Controlled,CVR_01
+17,2023,2023-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+17,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2024,2024-03-01,BMI < 30,BMI >= 30,34.56,0,Not Controlled,CVR_01
+17,2024,2024-03-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+17,2024,2024-03-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+17,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+17,2025,2025-03-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+17,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+17,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+17,2026,2025-03-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+18,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+18,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+18,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+18,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2018,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+18,2018,2018-06-01,BMI < 30,BMI < 30,25.5,1,Controlled,CVR_01
+18,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+18,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+18,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+18,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2020,2019-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+18,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2021,2019-04-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+18,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+18,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+18,2023,2023-06-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+18,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+18,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2024,2023-06-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+18,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+18,2025,2023-06-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+19,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+19,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+19,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+19,2025,2025-01-01,BMI < 30,BMI < 30,27.44,1,Controlled,CVR_01
+19,2025,2025-02-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+19,2025,2025-02-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+19,2025,2025-01-01,Diabetes Control,Not Measured,NA,-1,Not Measured,CVR_04
+19,2025,2025-01-01,Diabetes Control (CMS122v12 + OMOP),Not Measured,NA,-1,Not Measured,CVR_05
+19,2025,2025-01-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+19,2025,2025-01-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+19,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+19,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+19,2026,2025-02-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+19,2026,2025-02-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+20,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+20,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+20,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+20,2026,2026-01-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+20,2026,2026-01-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+21,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+21,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+21,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+21,2023,2023-06-01,BMI < 30,BMI < 30,20.82,1,Controlled,CVR_01
+21,2023,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+21,2023,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+21,2023,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+21,2023,2023-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+21,2023,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+21,2023,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+21,2023,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+21,2023,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+21,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+21,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+21,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+21,2024,2024-05-01,BMI < 30,BMI < 30,21.47,1,Controlled,CVR_01
+21,2024,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+21,2024,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+21,2024,2024-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+21,2024,2024-01-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+21,2024,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+21,2024,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+21,2024,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+21,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+21,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+21,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+21,2025,2025-07-01,BMI < 30,BMI < 30,23.96,1,Controlled,CVR_01
+21,2025,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+21,2025,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+21,2025,NA,CHC CurrentYr Pt ,CHC_CurrentYr_Pt,NA,1,Yes,PTYPE_02
+21,2025,2025-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+21,2025,2025-01-01,Food Security,Secure,NA,1,Controlled,SDOH_01
+21,2025,2025-01-01,Housing Security,Secure,NA,1,Controlled,SDOH_02
+21,2025,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+21,2025,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+21,2025,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+21,2025,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+21,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+21,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+21,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+21,2026,NA,CHC 1Yr Pt ,CHC_1Yr_Pt,NA,1,Yes,PTYPE_11
+21,2026,NA,CHC 2Yr Pt ,CHC_2Yr_Pt,NA,1,Yes,PTYPE_10
+21,2026,2026-02-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+21,2026,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+21,2026,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+22,2015,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+22,2015,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2015,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+22,2015,2015-01-01,BMI < 30,BMI < 30,19.85,1,Controlled,CVR_01
+22,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+22,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2016,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+22,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+22,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+22,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+22,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2018,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+22,2019,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+22,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2019,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+22,2019,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+22,2019,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+22,2019,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+22,2020,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+22,2020,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2020,2019-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+22,2020,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+22,2020,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+22,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+22,2021,2019-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+22,2021,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+23,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+23,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+23,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+23,2021,2021-05-01,COVID Vaccination,1+ vaccinations in year,2,1,Controlled,COVID_01
+23,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+23,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+23,2022,2021-05-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+23,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+23,2023,2021-05-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+24,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+24,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+24,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+24,2024,2024-10-01,BMI Pediatrics,BMI < 95,91.28,1,Controlled,CVR_02
+24,2024,2024-11-01,COVID Vaccination Peds,No vaccinations in year,1,0,Not Controlled,COVID_02
+24,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+24,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+24,2025,2024-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+24,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+24,2026,2024-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+25,2016,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+25,2016,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+25,2016,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+25,2016,2016-12-01,BMI < 30,BMI < 30,28.89,1,Controlled,CVR_01
+25,2016,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+25,2016,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+25,2016,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+25,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+25,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+25,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+25,2017,2017-12-01,BMI < 30,BMI >= 30,31.76,0,Not Controlled,CVR_01
+25,2017,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+25,2017,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+25,2017,NA,Primary Care Current Yr Pt,Primary_Care_Current_Yr_Pt,NA,1,Yes,PTYPE_08
+25,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+25,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+25,2018,NA,Primary Care 1Yr Pt ,Primary_Care_1Yr_Pt,NA,1,Yes,PTYPE_01
+25,2018,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+25,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+25,2019,NA,Primary Care 2Yr Pt ,Primary_Care_2Yr_Pt,NA,1,Yes,PTYPE_09
+26,2017,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+26,2017,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+26,2017,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+26,2017,2017-11-01,Blood Pressure Control,Not Controlled,140/70,0,Not Controlled,CVR_03
+26,2017,2017-11-01,BMI < 30,BMI < 30,25.86,1,Controlled,CVR_01
+26,2017,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+26,2018,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+26,2018,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+26,2018,2018-02-01,Blood Pressure Control,Controlled,128/75,1,Controlled,CVR_03
+26,2018,2018-02-01,BMI < 30,BMI < 30,25.86,1,Controlled,CVR_01
+26,2018,NA,Smoking status,Current non-smoker,NA,1,Controlled,PS_01
+26,2019,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2021,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+27,2021,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2021,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+27,2021,2021-09-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+27,2021,2021-01-01,Diabetes Control,Not Measured,NA,-1,Not Measured,CVR_04
+27,2021,2021-01-01,Diabetes Control (CMS122v12 + OMOP),Not Measured,NA,-1,Not Measured,CVR_05
+27,2022,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+27,2022,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2022,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+27,2022,2022-10-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+27,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+27,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+27,2023,2023-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+27,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+27,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2024,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+27,2024,2024-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+27,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+27,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+27,2025,2025-12-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+27,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+27,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+27,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+27,2026,2026-02-01,BMI < 30,BMI >= 30,32.01,0,Not Controlled,CVR_01
+27,2026,2026-02-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+28,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+28,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+28,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+28,2023,2023-11-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+28,2023,2023-11-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+28,2023,2023-11-01,COVID Vaccination,1+ vaccinations in year,2,1,Controlled,COVID_01
+28,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+28,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+28,2024,2023-11-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+28,2024,2023-11-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+28,2024,2023-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+28,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+28,2025,2023-11-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+28,2025,2023-11-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+28,2025,2023-11-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01
+29,2023,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+29,2023,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+29,2023,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+29,2023,2023-09-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+29,2024,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+29,2024,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+29,2024,2023-09-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+29,2025,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+29,2025,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+29,2025,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+29,2025,2025-01-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+29,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+29,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+29,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+29,2026,2026-01-01,COVID Vaccination Peds,No vaccinations in year,0,0,Not Controlled,COVID_02
+30,2026,NA,Active Pt 1 Yr Lookback,Active1Yr_Pt,NA,1,Yes,PTYPE_03
+30,2026,NA,Active Pt 2 Yr Lookback,Active2Yr_Pt,NA,1,Yes,PTYPE_05
+30,2026,NA,Active Pt Current Year,ActiveCurrentYr_Pt,NA,1,Yes,PTYPE_04
+30,2026,2026-02-01,Breast Cancer Screening,Not Screened,NA,0,Not Controlled,PS_03
+30,2026,2026-02-01,Colon Cancer Screening,Not Screened,NA,0,Not Controlled,PS_02
+30,2026,2026-02-01,COVID Vaccination,No vaccinations in year,0,0,Not Controlled,COVID_01

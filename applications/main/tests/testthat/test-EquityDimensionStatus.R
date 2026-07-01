@@ -43,7 +43,7 @@ describe("equity_dimension_status", {
         pull(truthy) |>
         sum()
 
-      expect_equal(trythy_sum_without_filters, 44)
+      expect_equal(trythy_sum_without_filters, 21)
 
       # Filter a numerical column, for example, spl_svm_eji_2022
       truthy_sum_filtered <- EquityDimensionStatus$new(
@@ -60,7 +60,7 @@ describe("equity_dimension_status", {
         sum()
 
       expect_gt(trythy_sum_without_filters, truthy_sum_filtered)
-      expect_equal(truthy_sum_filtered, 3)
+      expect_equal(truthy_sum_filtered, 4)
 
       # Filter both age_group and spl_svm_eji_2022
       EquityDimensionStatus$new(
@@ -78,7 +78,7 @@ describe("equity_dimension_status", {
       )$get_incontrol_table() |>
         pull(truthy) |>
         sum() |>
-        expect_equal(4)
+        expect_equal(2)
     })
   })
 
