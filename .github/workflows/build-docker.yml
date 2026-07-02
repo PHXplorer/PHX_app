@@ -64,8 +64,6 @@ jobs:
         context: applications/telemetry
         platforms: linux/amd64
         push: true
-        cache-from: type=gha,scope=h2e-telemetry
-        cache-to: type=gha,mode=max,scope=h2e-telemetry
         tags: |
           ghcr.io/phxplorer/phx_app-telemetry:${{ github.sha }}
           ghcr.io/phxplorer/phx_app-telemetry:${{ env.MODIFIED_BRANCH_NAME }}
