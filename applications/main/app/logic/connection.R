@@ -27,7 +27,7 @@ get_db_con <- function() {
     ),
     mssql = dbConnect(
       drv = odbc::odbc(),
-      Driver = "ODBC Driver 17 for SQL Server",
+      Driver = "ODBC Driver 18 for SQL Server",
       Server = paste(config$data$database$db_host, config$data$database$db_port, sep = ","),
       Database = config$data$database$db_name,
       UID = config$data$database$db_user,
