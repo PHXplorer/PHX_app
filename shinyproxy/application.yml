@@ -29,7 +29,7 @@ proxy:
   - id: main_application
     access-groups: ["${AUTH_ADMIN_GROUP}", "${AUTH_REGULAR_GROUP}"]
     access-expression: "#{toList('${REGULAR_USERS}', ',').contains(userId) or toList('${ADMIN_USERS}', ',').contains(userId)}"
-    display-name: Population Health Explorer
+    display-name: Population Health Explorer - Boston HealthNet
     description: Production version (main branch), connected to the production database
     container-cmd: ["R", "-e", "shiny::runApp()"]
     container-image: ghcr.io/phxplorer/phx_app-main:main
@@ -44,6 +44,28 @@ proxy:
       DB_NAME: ${DB_NAME_PROD}
       DB_USER: ${DB_USER_PROD}
       DB_PASS: ${DB_PASS_PROD}
+    container-volumes:
+      - ${SHINYPROXY_MAINAPP_CONFIG_DIR_VOLUME}
+      - ${SHINYPROXY_MAINAPP_CONFIG_FILE_VOLUME}
+      - ${SHINYPROXY_TELEMETRY_DB_VOLUME}
+  - id: main_bphx_application
+    access-groups: ["${AUTH_ADMIN_GROUP}", "${AUTH_REGULAR_GROUP}"]
+    access-expression: "#{toList('${REGULAR_USERS}', ',').contains(userId) or toList('${ADMIN_USERS}', ',').contains(userId)}"
+    display-name: Population Health Explorer - Boston
+    description: Production version (main branch), connected to the production database
+    container-cmd: ["R", "-e", "shiny::runApp()"]
+    container-image: ghcr.io/phxplorer/phx_app-main:main
+    container-network-connections: ["main-network"]
+    container-env-file: .env
+    container-env:
+      APP_ID: 'bphxprod'
+      ENVIRONMENT: 'production'
+      DB_DRIVER: ${DB_DRIVER}
+      DB_HOST: ${DB_HOST_BPHXPROD}
+      DB_PORT: ${DB_PORT_BPHXPROD}
+      DB_NAME: ${DB_NAME_BPHXPROD}
+      DB_USER: ${DB_USER_BPHXPROD}
+      DB_PASS: ${DB_PASS_BPHXPROD}
     container-volumes:
       - ${SHINYPROXY_MAINAPP_CONFIG_DIR_VOLUME}
       - ${SHINYPROXY_MAINAPP_CONFIG_FILE_VOLUME}
