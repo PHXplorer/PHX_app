@@ -97,7 +97,7 @@ table_validation_server <- function(id) {
       )
       table_join_result[3] <- get_tbl_join_result(
         data_x = "demo_attributes",
-        data_y = "equity_dimensions",
+        data_y = "health_dimensions",
         fields = c("person_id", "year"),
         result_var = "check_joins_person_id_year"
       )
