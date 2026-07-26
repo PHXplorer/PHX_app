@@ -49,12 +49,12 @@ field_validation_server <- function(id) {
 
     output$validate_equity_dimensions <- renderUI({
       req(input$gen_report_btn)
-      dataset <- get_filtered_data(table = "equity_dimensions", fields = "status") |>
+      dataset <- get_filtered_data(table = "health_dimensions", fields = "status") |>
         collect() |>
         withProgress(value = 1, message = "Fetching data...")
       create_agent(
         tbl = dataset,
-        tbl_name = "equity_dimensions",
+        tbl_name = "health_dimensions",
         label = "VALID-I",
         actions = ACTION_LEVEL
       ) |>
