@@ -12,7 +12,7 @@ default:
     - '#57A29B'
   all_tables:
     - demo_attributes
-    - equity_dimensions
+    - health_dimensions
     - feature_details
     - fips_data
     - zip5_data
@@ -27,11 +27,11 @@ default:
       - age_group
       - fips
       - zip5
-    equity_dimensions:
+    health_dimensions:
       - person_id
       - year
       - measurement_date
-      - equity_dimension
+      - health_dimension
       - value
       - value_as_number
       - featureid
@@ -66,8 +66,8 @@ default:
       pass_text: '✅ Data available for demo_attributes + zip5_data by zip5'
       fail_text: '❌ No data available for demo_attributes + zip5_data by zip5'
     check_joins_person_id_year:
-      pass_text: '✅ Data available for demo_attributes + equity_dimensions by person_id and year'
-      fail_text: '❌ No data available for demo_attributes + equity_dimensions by person_id and year'
+      pass_text: '✅ Data available for demo_attributes + health_dimensions by person_id and year'
+      fail_text: '❌ No data available for demo_attributes + health_dimensions by person_id and year'
     check_joined_fields_fips:
       pass_text: '✅ All fields defined in feature_details are present in fips_data'
       fail_text: '❌ Fields defined in feature_details, not present in fips_data 👇'
