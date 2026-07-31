@@ -31,32 +31,44 @@ prepare_filter_options_sql <- function(details, con) {
   details |>
     filter(value_type == "text") |>
     select(colname, table) |>
-    rowwise() |>
-    mutate(
-      query_template = ifelse(
+    group_by(
+      group_key = ifelse(
         table == "health_dimensions",
-        "
-        SELECT
-            DISTINCT CAST(Value as VARCHAR(150)) AS value,
-            FeatureID AS name
-        FROM
-            {`table`}
-        WHERE
-            FeatureID = UPPER({
-              colname
-            })
-        ",
-        "
-        SELECT
-          DISTINCT CAST({`colname`} as VARCHAR(150)) as value,
-          {colname} as name
-        FROM {`table`}
-        "
-      ),
-      query = glue_sql(query_template, .con = con)
+        table,
+        paste(table, colname, sep = "__")
+      )
     ) |>
-    ungroup() |>
-    pull(query) |>
+    group_map(function(data, group){
+      table <- data$table[[1]]
+      if (table == "health_dimensions") {
+        features <- toupper(data$colname)
+        glue_sql(
+          "
+          SELECT DISTINCT
+              CAST(Value as VARCHAR(150)) AS value,
+              FeatureID AS name
+          FROM
+              {`table`}
+          WHERE
+              FeatureID IN ({features*})
+          ",
+          .con = con
+        )
+      }
+      else {
+        colname <- data$colname[[1]]
+        glue_sql(
+          "
+          SELECT DISTINCT
+              CAST({`colname`} as VARCHAR(150)) as value,
+              {colname} as name
+          FROM {`table`}
+          ",
+          .con = con
+        )
+      }
+    }) |>
+    unlist() |>
     paste(collapse = " union all ")
 }
 
